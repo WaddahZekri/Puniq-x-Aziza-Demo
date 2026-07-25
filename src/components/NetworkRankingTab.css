@@ -1,0 +1,149 @@
+.network-ranking-tab {
+  width: 100%;
+}
+
+.network-ranking-tab__empty {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.network-ranking-tab__climate-toggle {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 8px;
+}
+
+.network-ranking-tab__climate-note {
+  margin: 0 0 14px;
+  padding: 10px 14px;
+  font-size: 0.76rem;
+  line-height: 1.6;
+  color: var(--text-muted);
+  background: var(--puniq-navy-2);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+}
+
+.network-ranking-tab__zone-tag {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  cursor: help;
+}
+
+.network-ranking-tab__filters {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.network-ranking-tab__filter-btn {
+  padding: 6px 14px;
+  font-size: 0.78rem;
+  font-family: var(--font-body);
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid var(--card-border);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.network-ranking-tab__filter-btn.is-active {
+  color: var(--ice);
+  background: var(--puniq-blue);
+  border-color: var(--puniq-blue);
+}
+
+.network-ranking-tab__table-wrapper {
+  overflow-x: auto;
+}
+
+.network-ranking-tab__table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.network-ranking-tab__th {
+  padding: 10px 8px;
+  text-align: left;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--card-border);
+  white-space: nowrap;
+}
+
+.network-ranking-tab__th--sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.network-ranking-tab__th--sortable:hover {
+  color: var(--ice);
+}
+
+.network-ranking-tab__sort-arrow {
+  color: var(--puniq-blue-light);
+}
+
+.network-ranking-tab__row {
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.network-ranking-tab__row:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.network-ranking-tab__td {
+  padding: 8px 8px;
+  border-bottom: 1px solid var(--card-border);
+  color: var(--ice);
+  white-space: nowrap;
+  font-size: 0.82rem;
+}
+
+.network-ranking-tab__td--name {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.network-ranking-tab__badge {
+  flex-shrink: 0;
+  padding: 2px 8px;
+  font-size: 0.62rem;
+  font-weight: 700;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.network-ranking-tab__badge--good {
+  color: var(--status-good);
+  background: rgba(46, 204, 113, 0.1);
+  border: 1px solid var(--status-good);
+}
+
+.network-ranking-tab__badge--warn {
+  color: var(--status-warn);
+  background: rgba(245, 166, 35, 0.1);
+  border: 1px solid var(--status-warn);
+}
+
+.network-ranking-tab__trend {
+  font-weight: 600;
+}
+
+.network-ranking-tab__trend.is-up {
+  color: var(--status-good);
+}
+
+.network-ranking-tab__trend.is-down {
+  color: var(--status-danger);
+}

@@ -1,0 +1,469 @@
+.overview-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.overview-tab__hero {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+}
+
+.overview-tab__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 10px 12px;
+  background: var(--puniq-navy-2);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+}
+
+.overview-tab__stat--gauge {
+  align-items: flex-start;
+}
+
+.overview-tab__stat--locked {
+  align-items: flex-start;
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.overview-tab__stat--fleet-note {
+  align-items: flex-start;
+  gap: 6px;
+}
+
+.overview-tab__fleet-note-text {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.45;
+  color: var(--text-muted);
+}
+
+.overview-tab__fleet-note-link {
+  padding: 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--puniq-blue-light);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.overview-tab__fleet-note-link:hover {
+  text-decoration: underline;
+}
+
+/* Dev-only reference tag (?internal=true) — deliberately plain/dashed so
+   it reads unmistakably as internal tooling, never mistaken for
+   client-facing UI. */
+.overview-tab__internal-tag {
+  margin: -4px 0 0;
+  padding: 6px 10px;
+  font-size: 0.7rem;
+  font-family: 'SF Mono', 'Consolas', 'Menlo', monospace;
+  color: var(--status-warn);
+  background: rgba(245, 166, 35, 0.08);
+  border: 1px dashed var(--status-warn);
+  border-radius: 6px;
+}
+
+.overview-tab__locked-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  margin: 2px 0 4px;
+}
+
+.overview-tab__locked-icon {
+  font-size: 1.1rem;
+  opacity: 0.45;
+  filter: grayscale(1);
+  line-height: 1;
+}
+
+.overview-tab__locked-text {
+  margin: 0;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+
+.overview-tab__locked-cta {
+  padding: 6px 12px;
+  font-size: 0.74rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  color: var(--ice);
+  background: var(--puniq-blue);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.overview-tab__locked-cta:hover {
+  opacity: 0.9;
+}
+
+.overview-tab__stat-label {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.overview-tab__stat-label--warn {
+  color: var(--status-danger);
+  font-weight: 600;
+}
+
+.overview-tab__health-caption {
+  margin: 4px 0 0;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.overview-tab__stat-value {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: var(--ice);
+}
+
+.overview-tab__stat-value--amber {
+  color: var(--amber);
+}
+
+.overview-tab__stat-caption {
+  margin: 0;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.overview-tab__trend {
+  margin: 0;
+  font-size: 0.72rem;
+  font-weight: 600;
+}
+
+.overview-tab__trend.is-good {
+  color: var(--status-good);
+}
+
+.overview-tab__trend.is-warn {
+  color: var(--status-warn);
+}
+
+.overview-tab__counter {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.overview-tab__counter-label {
+  margin: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.overview-tab__counter-value {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--puniq-blue-light);
+  font-variant-numeric: tabular-nums;
+}
+
+.overview-tab__counter-empty {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.overview-tab__solar {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 12px 14px;
+  background: rgba(76, 111, 239, 0.08);
+  border: 1px solid var(--puniq-blue-light);
+  border-radius: 8px;
+}
+
+.overview-tab__solar-value {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: var(--puniq-blue-light);
+  font-variant-numeric: tabular-nums;
+}
+
+.overview-tab__solar-caveat {
+  margin: 0;
+  font-size: 0.72rem;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+
+.overview-tab__datamap {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.overview-tab__section-label {
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.overview-tab__datamap-table-wrapper {
+  overflow-x: auto;
+}
+
+.overview-tab__datamap-table {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+}
+
+.overview-tab__datamap-th {
+  padding: 2px 8px;
+  text-align: left;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--card-border);
+  white-space: nowrap;
+}
+
+.overview-tab__datamap-td {
+  padding: 0 8px;
+  border-bottom: 1px solid var(--card-border);
+  color: var(--ice);
+  white-space: nowrap;
+  font-size: 0.78rem;
+}
+
+.overview-tab__datamap-td--code {
+  font-family: 'SF Mono', 'Consolas', 'Menlo', monospace;
+  font-size: 0.74rem;
+  color: var(--puniq-blue-light);
+}
+
+.overview-tab__datamap-caption {
+  margin: 0;
+  font-size: 0.76rem;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.overview-tab__departments {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.overview-tab__department-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.overview-tab__department-pill {
+  padding: 2px 9px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: var(--puniq-navy-2);
+  border: 1px solid var(--card-border);
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+/* The overview's centerpiece section — moved above the hero stats and
+   given its own tinted card (background wash + border in the same sky
+   blue as the Intelligence Réseau button) so it reads as the panel's most
+   important content, not a passing note between departments and contact. */
+.overview-tab__insight-preview {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  background: rgba(76, 111, 239, 0.07);
+  border: 1px solid rgba(76, 111, 239, 0.28);
+  border-radius: 12px;
+}
+
+.overview-tab__insight-preview-label {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--puniq-blue-light);
+}
+
+/* The one card this whole panel is meant to draw the eye to — deliberately
+   heavier than the .overview-tab__stat cards below it (more padding, a
+   bigger title, a thicker accent border, and a priority-tinted glow) so
+   the hierarchy reads unambiguously: this ticket > the "Voir tous les
+   tickets" link > the metric row underneath. */
+.overview-tab__insight-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px 22px;
+  background: var(--puniq-navy-2);
+  border: 1px solid var(--card-border);
+  border-left-width: 5px;
+  border-left-style: solid;
+  border-radius: 10px;
+}
+
+.overview-tab__insight-card.priority-border--urgent {
+  background: rgba(228, 72, 61, 0.08);
+  box-shadow: 0 0 0 1px rgba(228, 72, 61, 0.12), 0 8px 24px rgba(228, 72, 61, 0.16);
+}
+
+.overview-tab__insight-card.priority-border--recommended {
+  background: rgba(245, 166, 35, 0.08);
+  box-shadow: 0 0 0 1px rgba(245, 166, 35, 0.12), 0 8px 24px rgba(245, 166, 35, 0.16);
+}
+
+.overview-tab__insight-card.priority-border--informational {
+  background: rgba(76, 111, 239, 0.08);
+  box-shadow: 0 0 0 1px rgba(76, 111, 239, 0.12), 0 8px 24px rgba(76, 111, 239, 0.16);
+}
+
+.overview-tab__insight-card .priority-badge {
+  font-size: 0.76rem;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.overview-tab__insight-card-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.overview-tab__insight-card-title {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: var(--ice);
+}
+
+.overview-tab__insight-card-department {
+  margin: 0;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.overview-tab__insight-card-impact {
+  margin: 0;
+  font-size: 0.74rem;
+  color: var(--ice);
+}
+
+.overview-tab__insight-link {
+  align-self: flex-start;
+  padding: 0;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--puniq-blue-light);
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.overview-tab__insight-link:hover {
+  text-decoration: underline;
+}
+
+.overview-tab__insight-example-intro {
+  margin: 0 0 2px;
+  font-size: 0.76rem;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+/* Dashed border + muted "Exemple" badge (instead of a real priority
+   color/label) so this reads unmistakably as a mockup, not a live ticket
+   PUNIQ has already generated for this specific, unmonitored store. */
+.overview-tab__insight-card--example {
+  border-style: dashed;
+  border-left-style: dashed;
+  border-color: var(--card-border);
+  opacity: 0.85;
+}
+
+.overview-tab__insight-example-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.overview-tab__contact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.overview-tab__contact-rows {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 20px;
+}
+
+.overview-tab__contact-row {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  margin: 0;
+}
+
+.overview-tab__contact-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.overview-tab__contact-value {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--ice);
+}
+
+.overview-tab__connect-btn {
+  align-self: flex-start;
+  padding: 9px 18px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  color: var(--ice);
+  background: var(--monoprix-red);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.overview-tab__connect-btn:hover {
+  opacity: 0.9;
+}

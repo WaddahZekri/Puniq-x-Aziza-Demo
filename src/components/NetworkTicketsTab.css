@@ -1,0 +1,257 @@
+.network-tickets-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.network-tickets-tab__empty {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.network-tickets-tab__chips {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.network-tickets-tab__chip {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-family: var(--font-body);
+  color: var(--text-muted);
+  background: var(--puniq-navy-2);
+  border: 1px solid var(--card-border);
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: opacity 0.2s, background 0.2s;
+}
+
+.network-tickets-tab__chip:hover {
+  opacity: 0.85;
+}
+
+.network-tickets-tab__chip.is-active {
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--ice);
+}
+
+.network-tickets-tab__header-stat {
+  margin: 0;
+  padding: 14px 18px;
+  font-size: 0.9rem;
+  color: var(--ice);
+  background: var(--puniq-navy-2);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+}
+
+.network-tickets-tab__header-amount {
+  color: var(--amber);
+  font-weight: 700;
+}
+
+.network-tickets-tab__list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.network-tickets-tab__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 14px 16px;
+  background: var(--puniq-navy-2);
+  /* See InsightCard.css for why border-left is split out: avoids the
+     `border` shorthand implicitly setting border-left-color, which would
+     then fight priority.css's .priority-border--* over stylesheet order
+     instead of just applying it cleanly. */
+  border-top: 1px solid var(--card-border);
+  border-right: 1px solid var(--card-border);
+  border-bottom: 1px solid var(--card-border);
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-radius: 10px;
+}
+
+.network-tickets-tab__row-main {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  min-width: 0;
+}
+
+.network-tickets-tab__row-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.network-tickets-tab__store {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.network-tickets-tab__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--ice);
+}
+
+.network-tickets-tab__impact {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--amber);
+}
+
+.network-tickets-tab__detail-btn {
+  flex-shrink: 0;
+  padding: 8px 14px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  color: var(--ice);
+  background: var(--puniq-blue);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+
+.network-tickets-tab__detail-btn:hover {
+  opacity: 0.9;
+}
+
+/* Fleet-wide fault patterns — reuses --protocol-knx (violet), already part
+   of the palette for KNX-protocol devices, as a color distinct from the
+   Urgent/Recommandé/Informationnel language used everywhere else, so a
+   "Panne de flotte" card reads as its own tier rather than a fourth
+   priority level. */
+.network-tickets-tab__fleet-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.network-tickets-tab__section-label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.network-tickets-tab__fleet-icon {
+  color: var(--protocol-knx);
+}
+
+.network-tickets-tab__fleet-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.network-tickets-tab__fleet-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px 16px;
+  background: var(--puniq-navy-2);
+  border: 1px solid var(--card-border);
+  border-left: 3px solid var(--protocol-knx);
+  border-radius: 10px;
+}
+
+.network-tickets-tab__fleet-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.network-tickets-tab__fleet-badge {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--protocol-knx);
+}
+
+.network-tickets-tab__fleet-count {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.network-tickets-tab__fleet-title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--ice);
+}
+
+.network-tickets-tab__fleet-stores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.network-tickets-tab__fleet-store-chip {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1px;
+  padding: 5px 10px;
+  font-family: var(--font-body);
+  color: var(--ice);
+  background: rgba(139, 92, 246, 0.12);
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.network-tickets-tab__fleet-store-chip:hover {
+  opacity: 0.8;
+}
+
+.network-tickets-tab__fleet-store-code {
+  font-size: 0.66rem;
+  color: var(--text-muted);
+}
+
+.network-tickets-tab__fleet-impact {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--ice);
+}
+
+.network-tickets-tab__fleet-impact-amount {
+  color: var(--amber);
+  font-weight: 700;
+}
+
+.network-tickets-tab__fleet-action {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--protocol-knx);
+}

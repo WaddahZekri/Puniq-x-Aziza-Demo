@@ -1,0 +1,12 @@
+.tou-chart {
+  padding: 16px 18px;
+  background: var(--puniq-navy-2);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+}
+
+.tou-chart__title {
+  margin: 0 0 4px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}

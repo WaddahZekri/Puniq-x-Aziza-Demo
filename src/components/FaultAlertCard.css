@@ -1,0 +1,97 @@
+.fault-alert-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  background: var(--puniq-navy-2);
+  /* See InsightCard.css for why border-left is split out: avoids the
+     `border` shorthand implicitly setting border-left-color, which would
+     then fight priority.css's .priority-border--urgent over stylesheet
+     order instead of just applying it cleanly. */
+  border-top: 1px solid var(--card-border);
+  border-right: 1px solid var(--card-border);
+  border-bottom: 1px solid var(--card-border);
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-radius: 10px;
+}
+
+.fault-alert-card__store {
+  margin: 0;
+  font-size: 0.68rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.fault-alert-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* The one place this card needs to visually dominate — the store overview's
+   top-of-panel urgent alert (see StoreOverlayOverviewTab.jsx). Same markup,
+   just more weight: larger padding, a brighter tinted background, and a
+   thicker/brighter accent border instead of the default thin left stripe. */
+.fault-alert-card--hero {
+  padding: 22px;
+  background: rgba(228, 72, 61, 0.08);
+  border-top-color: rgba(228, 72, 61, 0.35);
+  border-right-color: rgba(228, 72, 61, 0.35);
+  border-bottom-color: rgba(228, 72, 61, 0.35);
+  border-left-width: 5px;
+  box-shadow: 0 0 0 1px rgba(228, 72, 61, 0.12), 0 8px 28px rgba(228, 72, 61, 0.18);
+}
+
+.fault-alert-card--hero .priority-badge {
+  font-size: 0.78rem;
+  padding: 3px 10px;
+  border-radius: 999px;
+  background: rgba(228, 72, 61, 0.16);
+}
+
+.fault-alert-card--hero .fault-alert-card__title {
+  font-size: 1.1rem;
+}
+
+.fault-alert-card__timestamp {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.fault-alert-card__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: var(--ice);
+}
+
+.fault-alert-card__description {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+
+.fault-alert-card__resolve-btn {
+  align-self: flex-start;
+  margin-top: 4px;
+  padding: 7px 14px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  color: var(--ice);
+  background: transparent;
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.fault-alert-card__resolve-btn:hover {
+  color: var(--status-good);
+  border-color: var(--status-good);
+}

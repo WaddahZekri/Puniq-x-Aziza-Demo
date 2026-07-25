@@ -1,0 +1,335 @@
+.network-sustainability-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.network-sustainability-tab__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+  align-items: stretch;
+}
+
+.network-sustainability-tab__card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 24px;
+  background: var(--puniq-navy-2);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+}
+
+.network-sustainability-tab__card--projection {
+  background: rgba(245, 166, 35, 0.08);
+  border-color: var(--amber);
+}
+
+.network-sustainability-tab__label {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.network-sustainability-tab__value {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--status-good);
+}
+
+.network-sustainability-tab__value--amber {
+  color: var(--amber);
+}
+
+.network-sustainability-tab__equivalence {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: var(--ice);
+}
+
+.network-sustainability-tab__caption {
+  margin: 0;
+  font-size: 0.76rem;
+  font-style: italic;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+
+.network-sustainability-tab__compliance-body {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--ice);
+}
+
+.network-sustainability-tab__report-btn {
+  align-self: flex-start;
+  margin-top: 8px;
+  padding: 10px 18px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  color: var(--ice);
+  background: var(--puniq-blue);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.network-sustainability-tab__report-btn:hover {
+  opacity: 0.9;
+}
+
+.network-sustainability-tab__report-status {
+  margin: 8px 0 0;
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.network-sustainability-tab__report-success {
+  margin: 8px 0 0;
+  padding: 10px 14px;
+  font-size: 0.85rem;
+  color: var(--status-good);
+  background: rgba(46, 204, 113, 0.08);
+  border-radius: 8px;
+}
+
+/* ANME mandatory energy audit compliance — amber accent (regulatory
+   attention, not urgent danger), consistent with --status-warn usage
+   elsewhere in the app. */
+.network-sustainability-tab__anme {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 24px;
+  background: rgba(245, 166, 35, 0.06);
+  border: 1px solid var(--status-warn);
+  border-radius: 10px;
+}
+
+.network-sustainability-tab__anme-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.network-sustainability-tab__anme .network-sustainability-tab__value {
+  color: var(--status-warn);
+}
+
+.network-sustainability-tab__anme-table-wrapper {
+  overflow-x: auto;
+}
+
+.network-sustainability-tab__anme-table {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.network-sustainability-tab__anme-table th {
+  padding: 8px 10px;
+  text-align: left;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--card-border);
+  white-space: nowrap;
+}
+
+.network-sustainability-tab__anme-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--card-border);
+  color: var(--ice);
+}
+
+.network-sustainability-tab__anme-row {
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.network-sustainability-tab__anme-row:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.network-sustainability-tab__anme-badge {
+  padding: 2px 9px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border-radius: 999px;
+  white-space: nowrap;
+  cursor: help;
+}
+
+.network-sustainability-tab__anme-badge--above {
+  color: var(--status-danger);
+  background: rgba(228, 72, 61, 0.1);
+  border: 1px solid var(--status-danger);
+}
+
+.network-sustainability-tab__anme-badge--near {
+  color: var(--status-warn);
+  background: rgba(245, 166, 35, 0.1);
+  border: 1px solid var(--status-warn);
+}
+
+.network-sustainability-tab__anme-badge--below {
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--card-border);
+}
+
+.network-sustainability-tab__anme-note {
+  margin: 0;
+  padding: 10px 12px;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--ice);
+  background: rgba(228, 72, 61, 0.08);
+  border-radius: 8px;
+}
+
+.network-sustainability-tab__anme-offer {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+/* Solar self-consumption/PPA potential — a per-site advisory tool (which
+   sites are worth discussing), deliberately NOT styled as a headline
+   metric card: plain background, no accent border. */
+.network-sustainability-tab__solar {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 24px;
+  background: var(--puniq-navy-2);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+}
+
+.network-sustainability-tab__solar-table-wrapper {
+  max-height: 320px;
+  overflow-y: auto;
+  overflow-x: auto;
+  border-radius: 8px;
+}
+
+.network-sustainability-tab__solar-table {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.network-sustainability-tab__solar-table th {
+  position: sticky;
+  top: 0;
+  padding: 8px 10px;
+  text-align: left;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  background: var(--puniq-navy-2);
+  border-bottom: 1px solid var(--card-border);
+  white-space: nowrap;
+}
+
+.network-sustainability-tab__solar-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--card-border);
+  color: var(--ice);
+}
+
+.network-sustainability-tab__solar-row {
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.network-sustainability-tab__solar-row:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.network-sustainability-tab__solar-connected-dot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-left: 6px;
+  border-radius: 999px;
+  background: var(--status-good);
+  vertical-align: middle;
+}
+
+.network-sustainability-tab__solar-phase {
+  padding: 2px 9px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  border-radius: 999px;
+  white-space: nowrap;
+}
+
+.network-sustainability-tab__solar-phase--priority {
+  color: var(--status-good);
+  background: rgba(46, 204, 113, 0.1);
+  border: 1px solid var(--status-good);
+}
+
+.network-sustainability-tab__solar-phase--phase2 {
+  color: var(--puniq-blue-light);
+  background: rgba(76, 111, 239, 0.12);
+  border: 1px solid var(--puniq-blue-light);
+}
+
+.network-sustainability-tab__solar-phase--evaluate {
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--card-border);
+}
+
+.network-sustainability-tab__solar-caveat {
+  margin: 0;
+  font-size: 0.76rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+/* Collapsed-by-default secondary section for the (unconfirmed-relevance)
+   EU CSRD/Taxonomy content — deliberately understated compared to the
+   ANME section above it. */
+.network-sustainability-tab__eu-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.network-sustainability-tab__eu-toggle {
+  align-self: flex-start;
+  padding: 8px 14px;
+  font-size: 0.78rem;
+  font-family: var(--font-body);
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px dashed var(--card-border);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.network-sustainability-tab__eu-toggle:hover {
+  color: var(--ice);
+  border-color: var(--puniq-blue-light);
+}

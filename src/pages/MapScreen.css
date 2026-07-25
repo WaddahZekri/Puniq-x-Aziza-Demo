@@ -1,0 +1,15 @@
+.map-screen {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+/* Relative anchor for MapSimulationOverlay — scoped to just the map area
+   (not the full screen width) so the floating bar centers over the map
+   regardless of the sidebars' widths. */
+.map-screen__map-area {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+  height: 100%;
+}

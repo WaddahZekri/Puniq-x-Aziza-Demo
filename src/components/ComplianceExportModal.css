@@ -1,0 +1,255 @@
+.compliance-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(5, 11, 26, 0.72);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.compliance-modal-backdrop.is-visible {
+  opacity: 1;
+}
+
+.compliance-modal {
+  width: min(680px, 92vw);
+  max-height: 85vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--puniq-navy);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.5);
+  transform: scale(0.96);
+  transition: transform 0.2s ease;
+  overflow: hidden;
+}
+
+.compliance-modal-backdrop.is-visible .compliance-modal {
+  transform: scale(1);
+}
+
+.compliance-modal__header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 22px;
+  border-bottom: 1px solid var(--card-border);
+  flex-shrink: 0;
+}
+
+.compliance-modal__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.1rem;
+  color: var(--ice);
+}
+
+.compliance-modal__subtitle {
+  margin: 2px 0 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.compliance-modal__header-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.compliance-modal__print-btn {
+  padding: 8px 14px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  color: var(--ice);
+  background: var(--puniq-blue);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+
+.compliance-modal__print-btn:hover {
+  opacity: 0.9;
+}
+
+.compliance-modal__close {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  line-height: 1;
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.compliance-modal__close:hover {
+  color: var(--ice);
+  border-color: var(--puniq-blue-light);
+}
+
+.compliance-modal__content {
+  flex: 1;
+  padding: 20px 22px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.compliance-modal__disclaimer {
+  margin: 0;
+  padding: 12px 14px;
+  font-size: 0.78rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  background: rgba(76, 111, 239, 0.08);
+  border: 1px dashed var(--puniq-blue-light);
+  border-radius: 8px;
+}
+
+.compliance-modal__stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+}
+
+.compliance-modal__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 14px 16px;
+  background: var(--puniq-navy-2);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+}
+
+.compliance-modal__stat-label {
+  margin: 0;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+}
+
+.compliance-modal__stat-value {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--ice);
+}
+
+.compliance-modal__stat-value--good {
+  color: var(--status-good);
+}
+
+.compliance-modal__stat-caption {
+  margin: 0;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.compliance-modal__table-wrapper {
+  overflow-x: auto;
+}
+
+.compliance-modal__table {
+  width: 100%;
+  min-width: 480px;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.compliance-modal__table th {
+  padding: 8px 10px;
+  text-align: left;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--card-border);
+  white-space: nowrap;
+}
+
+.compliance-modal__table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--card-border);
+  color: var(--ice);
+}
+
+.compliance-modal__footnote {
+  margin: 0;
+  font-size: 0.72rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+/* Real, working "print" path — window.print() renders only this element,
+   on a plain white page, so "Imprimer / Exporter en PDF" produces an
+   actual usable printout via the browser's own PDF-print pipeline rather
+   than simulating one. */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  .compliance-modal-backdrop,
+  .compliance-modal-backdrop * {
+    visibility: visible;
+  }
+
+  .compliance-modal-backdrop {
+    position: absolute;
+    inset: 0;
+    background: #fff;
+  }
+
+  .compliance-modal {
+    width: 100%;
+    max-height: none;
+    background: #fff;
+    border: none;
+    box-shadow: none;
+    transform: none;
+  }
+
+  .compliance-modal__header-actions {
+    display: none;
+  }
+
+  .compliance-modal__title,
+  .compliance-modal__stat-value,
+  .compliance-modal__table td,
+  .compliance-modal__table th {
+    color: #111;
+  }
+
+  .compliance-modal__subtitle,
+  .compliance-modal__stat-label,
+  .compliance-modal__stat-caption,
+  .compliance-modal__footnote,
+  .compliance-modal__disclaimer {
+    color: #444;
+  }
+
+  .compliance-modal__stat,
+  .compliance-modal__disclaimer {
+    background: #f4f4f4;
+    border-color: #ccc;
+  }
+}

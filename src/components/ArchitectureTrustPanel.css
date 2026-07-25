@@ -1,0 +1,116 @@
+/* Stacks above the store/network overlays it's opened from (z-index 200),
+   since it's a supporting detail layered on top of them, not a replacement
+   full-page view. */
+.trust-panel-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(5, 11, 26, 0.72);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.trust-panel-backdrop.is-visible {
+  opacity: 1;
+}
+
+.trust-panel {
+  width: min(440px, 90vw);
+  display: flex;
+  flex-direction: column;
+  background: var(--puniq-navy);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.5);
+  transform: scale(0.96);
+  transition: transform 0.2s ease;
+}
+
+.trust-panel-backdrop.is-visible .trust-panel {
+  transform: scale(1);
+}
+
+.trust-panel__header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--card-border);
+}
+
+.trust-panel__header-icon {
+  font-size: 1.1rem;
+}
+
+.trust-panel__title {
+  margin: 0;
+  margin-right: auto;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.05rem;
+  color: var(--ice);
+}
+
+.trust-panel__close {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  line-height: 1;
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.trust-panel__close:hover {
+  color: var(--ice);
+  border-color: var(--puniq-blue-light);
+}
+
+.trust-panel__points {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+}
+
+.trust-panel__point {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.trust-panel__point-icon {
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+  color: var(--puniq-blue-light);
+  background: rgba(76, 111, 239, 0.12);
+  border-radius: 8px;
+}
+
+.trust-panel__point-title {
+  margin: 0 0 3px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--ice);
+}
+
+.trust-panel__point-body {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}

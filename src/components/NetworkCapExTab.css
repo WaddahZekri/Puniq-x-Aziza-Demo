@@ -1,0 +1,95 @@
+.network-capex-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.network-capex-tab__empty {
+  margin: 0;
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+.network-capex-tab__summary {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 24px;
+  background: rgba(228, 72, 61, 0.08);
+  border: 1px solid var(--status-danger);
+  border-radius: 10px;
+}
+
+.network-capex-tab__summary-label {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.network-capex-tab__summary-value {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--status-danger);
+}
+
+.network-capex-tab__summary-caption {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.network-capex-tab__table-wrapper {
+  overflow-x: auto;
+}
+
+.network-capex-tab__table {
+  width: 100%;
+  min-width: 640px;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+}
+
+.network-capex-tab__th {
+  padding: 10px 8px;
+  text-align: left;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--card-border);
+  white-space: nowrap;
+}
+
+.network-capex-tab__row {
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.network-capex-tab__row:hover {
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.network-capex-tab__row.is-urgent {
+  background: rgba(228, 72, 61, 0.05);
+}
+
+.network-capex-tab__td {
+  padding: 8px 8px;
+  border-bottom: 1px solid var(--card-border);
+  color: var(--ice);
+  white-space: nowrap;
+  font-size: 0.82rem;
+}
+
+.network-capex-tab__life {
+  font-weight: 600;
+  color: var(--status-warn);
+}
+
+.network-capex-tab__life.is-urgent {
+  color: var(--status-danger);
+}

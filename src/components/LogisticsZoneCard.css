@@ -1,0 +1,62 @@
+.logistics-zone-card {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 16px;
+  background: var(--puniq-navy-2);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  min-width: 0;
+}
+
+.logistics-zone-card__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--ice);
+}
+
+.logistics-zone-card__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  font-size: 0.82rem;
+}
+
+.logistics-zone-card__row-label {
+  flex-shrink: 0;
+  color: var(--text-muted);
+}
+
+.logistics-zone-card__row-value {
+  text-align: right;
+  color: var(--ice);
+  font-variant-numeric: tabular-nums;
+}
+
+.logistics-zone-card__row-value--warning {
+  color: var(--status-danger);
+  font-weight: 600;
+}
+
+.logistics-zone-card__capacity {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.logistics-zone-card__capacity-bar {
+  width: 100%;
+  height: 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  overflow: hidden;
+}
+
+.logistics-zone-card__capacity-fill {
+  height: 100%;
+  background: var(--puniq-blue-light);
+  border-radius: 999px;
+  transition: width 0.4s ease;
+}

@@ -1,0 +1,307 @@
+.leaflet-map {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: var(--puniq-navy);
+}
+
+.leaflet-map__container {
+  width: 100%;
+  height: 100%;
+  background: var(--puniq-navy) !important;
+}
+
+/* --- Leaflet chrome theming --- */
+
+.leaflet-control-zoom {
+  border: 1px solid var(--card-border) !important;
+  box-shadow: none !important;
+}
+
+.leaflet-control-zoom a {
+  background: var(--puniq-navy-2) !important;
+  color: var(--ice) !important;
+  border-color: var(--puniq-blue) !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: var(--puniq-blue) !important;
+  color: var(--white) !important;
+}
+
+.puniq-reset-control {
+  margin-top: 6px !important;
+  border: 1px solid var(--card-border) !important;
+}
+
+.puniq-reset-control__button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  background: var(--puniq-navy-2);
+  color: var(--ice);
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.puniq-reset-control__button:hover {
+  background: var(--puniq-blue);
+  color: var(--white);
+}
+
+.leaflet-control-attribution {
+  background: rgba(11, 27, 63, 0.65) !important;
+  color: var(--text-muted) !important;
+  font-size: 0.65rem !important;
+}
+
+.leaflet-control-attribution a {
+  color: var(--text-muted) !important;
+}
+
+/* --- Tooltip theming --- */
+
+.leaflet-store-tooltip.leaflet-tooltip {
+  background: var(--puniq-navy-2);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  color: var(--ice);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  padding: 10px 12px;
+}
+
+.leaflet-store-tooltip.leaflet-tooltip::before {
+  display: none;
+}
+
+/* --- Store markers --- */
+
+.leaflet-store-marker {
+  /* Leaflet positions this element (its actual divIcon root) via a
+     transform computed for absolute positioning — position: relative here
+     would leave it in normal document flow too, stacking markers below
+     each other on top of that transform and making them drift hundreds of
+     px from their real lat/lng. Absolute preserves the centered dot/glow/
+     ring children below (any non-static position works as their
+     containing block). */
+  position: absolute;
+}
+
+.leaflet-store-marker__dot {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  opacity: 0.55;
+  transition: box-shadow 0.2s ease;
+}
+
+/* 3-tier severity — same underlying getSeverity() state the sidebar dot,
+   store overview alert, and notification bell all read, so all four
+   surfaces always agree. 'none' (healthy, no pending tickets) is the
+   default connected color; 'routine' and 'urgent' override it. */
+.leaflet-store-marker--connected .leaflet-store-marker__dot {
+  width: 14px;
+  height: 14px;
+  background: var(--puniq-blue-light);
+  opacity: 1;
+}
+
+.leaflet-store-marker--severity-routine .leaflet-store-marker__dot {
+  background: var(--status-warn);
+}
+
+.leaflet-store-marker--severity-urgent .leaflet-store-marker__dot {
+  background: var(--status-danger);
+}
+
+.leaflet-store-marker__glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: var(--puniq-blue-light-glow);
+  transform: translate(-50%, -50%) scale(0.6);
+  animation: leaflet-marker-pulse 2s ease-out infinite;
+}
+
+.leaflet-store-marker--severity-routine .leaflet-store-marker__glow {
+  background: var(--status-warn-glow);
+}
+
+.leaflet-store-marker--severity-urgent .leaflet-store-marker__glow {
+  background: var(--status-danger-glow);
+}
+
+.leaflet-store-marker__ring {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 1.5px solid var(--puniq-blue-light);
+}
+
+.leaflet-store-marker__ring--dormant {
+  width: 14px;
+  height: 14px;
+}
+
+.leaflet-store-marker--highlight .leaflet-store-marker__dot {
+  animation: leaflet-marker-burst 1.1s ease-out;
+}
+
+.leaflet-store-marker--row-hover .leaflet-store-marker__dot {
+  box-shadow: 0 0 0 4px rgba(76, 111, 239, 0.55);
+}
+
+@keyframes leaflet-marker-pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(0.6);
+    opacity: 0.7;
+  }
+  70% {
+    transform: translate(-50%, -50%) scale(1.9);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1.9);
+    opacity: 0;
+  }
+}
+
+@keyframes leaflet-marker-burst {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  40% {
+    transform: translate(-50%, -50%) scale(2.2);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+
+/* --- Cluster icon --- */
+
+.leaflet-cluster-icon-wrapper {
+  /* Same reasoning as .leaflet-store-marker above: this is the cluster
+     bubble's actual divIcon root, which Leaflet must be free to position
+     absolutely. */
+  position: absolute;
+  background: transparent !important;
+  border: none !important;
+}
+
+.leaflet-cluster-icon {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: rgba(136, 149, 184, 0.32);
+  border: 1px solid var(--text-muted);
+  color: var(--ice);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.78rem;
+}
+
+/* Clusters represent a bundle of connected stores at zoomed-out scale, not
+   any one store's severity (aggregating severity across a cluster's
+   members isn't attempted) — blue keeps it reading as "connected stores
+   here" without implying every member is unhealthy, now that red means
+   urgent specifically. */
+.leaflet-cluster-icon--connected {
+  background: var(--puniq-blue-light);
+  border-color: var(--puniq-blue-light);
+  color: var(--white);
+  font-weight: 700;
+}
+
+/* A cluster containing any routine (amber) stores reads as amber overall —
+   urgent (red) stores never reach this component since they're rendered
+   as standalone markers and excluded from clustering upstream, so amber
+   is the only tint a cluster bubble can take on beyond the default blue. */
+.leaflet-cluster-icon--connected-amber {
+  background: var(--status-warn);
+  border-color: var(--status-warn);
+  color: var(--white);
+}
+
+.leaflet-cluster-icon__glow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: var(--puniq-blue-light-glow);
+  transform: translate(-50%, -50%) scale(0.75);
+  animation: leaflet-marker-pulse 2s ease-out infinite;
+  pointer-events: none;
+}
+
+.leaflet-cluster-icon__glow--amber {
+  background: var(--status-warn-glow);
+}
+
+/* --- Urgent (red) standalone markers ---
+   These sit in their own top-most pane (see LeafletMap.jsx) so they never
+   get lost under clusters or other markers; the glow/pulse below is tuned
+   louder and faster than the shared connected-marker glow so an urgent
+   store reads as "needs attention now" at a glance across the whole map. */
+
+.leaflet-store-marker--urgent-standalone .leaflet-store-marker__dot {
+  width: 16px;
+  height: 16px;
+  box-shadow: 0 0 10px 2px var(--status-danger-glow);
+}
+
+.leaflet-store-marker--urgent-standalone .leaflet-store-marker__glow {
+  width: 34px;
+  height: 34px;
+  background: var(--status-danger-glow);
+  animation: leaflet-marker-pulse-urgent 1.4s ease-out infinite;
+}
+
+.leaflet-store-marker--urgent-standalone .leaflet-store-marker__glow--secondary {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  background: var(--status-danger-glow);
+  transform: translate(-50%, -50%) scale(0.6);
+  animation: leaflet-marker-pulse-urgent 1.4s ease-out infinite 0.7s;
+  pointer-events: none;
+}
+
+@keyframes leaflet-marker-pulse-urgent {
+  0% {
+    transform: translate(-50%, -50%) scale(0.55);
+    opacity: 0.9;
+  }
+  70% {
+    transform: translate(-50%, -50%) scale(2.3);
+    opacity: 0;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(2.3);
+    opacity: 0;
+  }
+}

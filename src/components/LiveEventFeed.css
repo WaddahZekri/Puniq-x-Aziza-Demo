@@ -1,0 +1,61 @@
+.live-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+  min-height: 0;
+}
+
+.live-feed__label {
+  margin: 0;
+  flex-shrink: 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.live-feed__viewport {
+  flex: 1;
+  min-height: 60px;
+  overflow-y: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  mask-image: linear-gradient(to bottom, transparent, black 16px, black 100%);
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black 16px, black 100%);
+}
+
+.live-feed__viewport::-webkit-scrollbar {
+  display: none;
+}
+
+.live-feed__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.live-feed__item {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  font-size: 0.74rem;
+  line-height: 1.35;
+}
+
+.live-feed__store {
+  color: var(--puniq-blue-light);
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.live-feed__message {
+  color: var(--text-muted);
+  white-space: normal;
+  word-break: break-word;
+}

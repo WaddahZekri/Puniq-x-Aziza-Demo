@@ -1,0 +1,258 @@
+.insight-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  background: var(--puniq-navy-2);
+  /* Split out from the `border` shorthand deliberately: that shorthand sets
+     border-left-color too, which would then fight over stylesheet order
+     with .priority-border--* in priority.css. Top/right/bottom use the
+     shorthand; left only sets width/style so its color comes exclusively
+     from priority.css with no competing declaration anywhere. */
+  border-top: 1px solid var(--card-border);
+  border-right: 1px solid var(--card-border);
+  border-bottom: 1px solid var(--card-border);
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-radius: 10px;
+  transition: opacity 0.3s, border-color 0.3s;
+}
+
+.insight-card--resolved {
+  opacity: 0.72;
+}
+
+.insight-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.insight-card__timestamp {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.insight-card__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.insight-card__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--ice);
+}
+
+.insight-card__subtitle {
+  margin: 0;
+  font-size: 0.76rem;
+  color: var(--text-muted);
+}
+
+.insight-card__section {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.insight-card__section-label {
+  margin: 0;
+  font-size: 0.64rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.insight-card__evidence {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.insight-card__evidence-line {
+  font-family: 'SF Mono', 'Consolas', 'Menlo', monospace;
+  font-size: 0.76rem;
+  color: var(--puniq-blue-light);
+  line-height: 1.4;
+}
+
+.insight-card__text {
+  margin: 0;
+  font-size: 0.83rem;
+  line-height: 1.4;
+  color: var(--text-muted);
+}
+
+.insight-card__impact {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--amber);
+}
+
+.insight-card__result {
+  margin: 0;
+  padding: 8px 10px;
+  font-size: 0.8rem;
+  color: var(--status-good);
+  background: rgba(46, 204, 113, 0.08);
+  border-radius: 6px;
+  animation: insight-result-reveal 0.4s ease-out;
+}
+
+@keyframes insight-result-reveal {
+  from {
+    opacity: 0;
+    transform: translateY(-4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.insight-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-top: 6px;
+  border-top: 1px solid var(--card-border);
+}
+
+.insight-card__apply-btn {
+  padding: 8px 16px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  color: var(--ice);
+  background: var(--puniq-blue);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.insight-card__apply-btn:hover {
+  opacity: 0.9;
+}
+
+.insight-card__applying {
+  margin: 0;
+  font-size: 0.8rem;
+  font-style: italic;
+  color: var(--text-muted);
+}
+
+.insight-card__physical-tag {
+  padding: 4px 10px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--status-warn);
+  background: rgba(245, 166, 35, 0.1);
+  border: 1px solid var(--status-warn);
+  border-radius: 999px;
+}
+
+.insight-card__dismiss-btn {
+  padding: 7px 14px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  color: var(--ice);
+  background: transparent;
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.insight-card__dismiss-btn:hover {
+  color: var(--status-good);
+  border-color: var(--status-good);
+}
+
+.insight-card__resolved-tag {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--status-good);
+}
+
+.insight-card__resolved-tag--muted {
+  color: var(--text-muted);
+}
+
+.insight-card__resolved-check {
+  font-size: 0.85rem;
+}
+
+.insight-card__confirm {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 10px;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  animation: insight-confirm-expand 0.25s ease-out;
+}
+
+@keyframes insight-confirm-expand {
+  from {
+    opacity: 0;
+    transform: scaleY(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+.insight-card__confirm-text {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: var(--ice);
+}
+
+.insight-card__confirm-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.insight-card__confirm-btn {
+  padding: 7px 16px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  color: var(--ice);
+  background: var(--monoprix-red);
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.insight-card__cancel-btn {
+  padding: 7px 16px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  cursor: pointer;
+}

@@ -1,0 +1,46 @@
+.intelligence-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.intelligence-tab__insights {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.roi-statement {
+  padding: 28px 24px;
+  text-align: center;
+  background: var(--puniq-navy-2);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+}
+
+.roi-statement__text {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  line-height: 1.4;
+  color: var(--ice);
+}
+
+.roi-statement__amount {
+  color: var(--amber);
+  font-weight: 700;
+}
+
+.intelligence-tab__insight--focused .insight-card,
+.intelligence-tab__insight--focused .fault-alert-card {
+  animation: intelligence-focus-glow 1.8s ease-out;
+}
+
+@keyframes intelligence-focus-glow {
+  0% {
+    box-shadow: 0 0 0 2px var(--puniq-blue-light);
+  }
+  100% {
+    box-shadow: 0 0 0 0 transparent;
+  }
+}

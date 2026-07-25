@@ -1,0 +1,109 @@
+.store-list-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.store-list-row:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.store-list-row:focus-visible {
+  outline: 1px solid var(--puniq-blue-light);
+  outline-offset: -1px;
+}
+
+.store-list-row.is-highlighted {
+  background: rgba(76, 111, 239, 0.14);
+  border-color: var(--puniq-blue-light);
+}
+
+.store-list-row.is-active {
+  background: rgba(216, 30, 42, 0.12);
+  border-color: var(--monoprix-red);
+}
+
+.store-list-row__dot {
+  flex-shrink: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  opacity: 0.6;
+}
+
+/* Same 3-tier severity as the map markers (see LeafletMap.css) — 'none' is
+   the default healthy-connected color, 'routine'/'urgent' override it.
+   Not-connected rows never get a --none/--routine/--urgent modifier, so
+   they keep the muted default above unchanged. */
+.store-list-row__dot--none {
+  background: var(--puniq-blue-light);
+  opacity: 1;
+}
+
+.store-list-row__dot--routine {
+  background: var(--status-warn);
+  opacity: 1;
+}
+
+.store-list-row__dot--urgent {
+  background: var(--status-danger);
+  opacity: 1;
+}
+
+.store-list-row__text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.store-list-row__name {
+  font-size: 0.82rem;
+  color: var(--ice);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.store-list-row__ville {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.store-list-row__open-btn {
+  flex-shrink: 0;
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  line-height: 1;
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid var(--card-border);
+  border-radius: 5px;
+  cursor: pointer;
+  opacity: 0.55;
+  transition: opacity 0.15s ease, color 0.15s ease, border-color 0.15s ease;
+}
+
+.store-list-row:hover .store-list-row__open-btn,
+.store-list-row:focus-visible .store-list-row__open-btn,
+.store-list-row.is-active .store-list-row__open-btn {
+  opacity: 1;
+}
+
+.store-list-row__open-btn:hover {
+  color: var(--ice);
+  border-color: var(--puniq-blue-light);
+}

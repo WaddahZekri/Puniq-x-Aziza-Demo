@@ -1,0 +1,134 @@
+/* Floating demo-tooling bar, bottom-center of the map area — deliberately
+   styled unlike the app's regular cards (translucent/blurred pill,
+   floating shadow) so it reads as "simulation tooling" sitting on top of
+   the product, not a permanent piece of the interface. */
+.map-sim-overlay {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 500;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px 10px;
+  background: rgba(11, 27, 63, 0.72);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 999px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.4);
+}
+
+/* Simulated period readout — leftmost in the bar, separated from the mode
+   toggle by a hairline divider so the bar reads as distinct sections
+   (time · mode · action) rather than one undifferentiated row. */
+.map-sim-overlay__period {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 0 12px 0 6px;
+  border-right: 1px solid rgba(255, 255, 255, 0.16);
+  white-space: nowrap;
+}
+
+.map-sim-overlay__period-badge {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--puniq-amber-muted);
+}
+
+.map-sim-overlay__period-label {
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.map-sim-overlay__mode {
+  display: flex;
+  gap: 4px;
+}
+
+.map-sim-overlay__mode-btn {
+  padding: 6px 14px;
+  font-size: 0.8rem;
+  font-family: var(--font-body);
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+  white-space: nowrap;
+}
+
+.map-sim-overlay__mode-btn.is-active {
+  color: var(--ice);
+  background: var(--puniq-blue);
+  border-color: var(--puniq-blue);
+}
+
+.map-sim-overlay__action {
+  padding: 7px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  color: var(--ice);
+  background: var(--monoprix-red);
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+}
+
+.map-sim-overlay__action:hover {
+  opacity: 0.9;
+}
+
+.map-sim-overlay__action--auto {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Once running, swap the urgent red CTA for a calmer outlined pill in the
+   "good/ongoing" status color — visually distinct from the pre-click state
+   so it reads as "this is happening now, click to stop" rather than a
+   fresh, unpressed call to action. */
+.map-sim-overlay__action--running {
+  background: transparent;
+  border: 1px solid rgba(46, 204, 113, 0.45);
+  color: var(--status-good);
+}
+
+.map-sim-overlay__action--running:hover {
+  opacity: 1;
+  border-color: rgba(46, 204, 113, 0.7);
+}
+
+.map-sim-overlay__icon {
+  font-size: 0.8rem;
+  line-height: 1;
+}
+
+/* Secondary to the primary red "Magasin suivant" action — a quieter,
+   outlined pill so the two Manuel-mode buttons don't compete for attention. */
+.map-sim-overlay__action--month {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+  color: var(--ice);
+}
+
+.map-sim-overlay__action--month:hover {
+  opacity: 1;
+  border-color: rgba(255, 255, 255, 0.42);
+}
+
+.map-sim-overlay__complete {
+  margin: 0;
+  padding: 6px 4px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--status-good);
+  white-space: nowrap;
+}

@@ -1,0 +1,22 @@
+.error-boundary-fallback {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.error-boundary-fallback__message {
+  margin: 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--status-danger);
+}
+
+.error-boundary-fallback__hint {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}

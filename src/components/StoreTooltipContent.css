@@ -1,0 +1,34 @@
+.store-tooltip-content {
+  min-width: 180px;
+  max-width: 220px;
+}
+
+.store-tooltip-content__title {
+  margin: 0 0 6px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: var(--ice);
+  line-height: 1.2;
+}
+
+.store-tooltip-content__status {
+  margin: 0 0 4px;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.store-tooltip-content__status--connected {
+  color: var(--ice);
+}
+
+.store-tooltip-content__metric {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.store-tooltip-content__amount {
+  color: var(--amber);
+  font-weight: 600;
+}

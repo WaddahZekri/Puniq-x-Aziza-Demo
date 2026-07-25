@@ -1,0 +1,38 @@
+.discovered-device-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  padding-top: 4px;
+  border-top: 1px solid var(--card-border);
+  font-size: 0.78rem;
+}
+
+.discovered-device-row__name {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+  color: var(--text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.discovered-device-row__new-tag {
+  flex-shrink: 0;
+  padding: 1px 6px;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--monoprix-red);
+  background: rgba(216, 30, 42, 0.12);
+  border-radius: 999px;
+}
+
+.discovered-device-row__reading {
+  flex-shrink: 0;
+  color: var(--ice);
+  font-variant-numeric: tabular-nums;
+}

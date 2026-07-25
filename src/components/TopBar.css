@@ -1,0 +1,123 @@
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 28px;
+  background: var(--puniq-navy-2);
+  border-bottom: 1px solid var(--card-border);
+  z-index: 100;
+}
+
+.top-bar__left {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.top-bar__lockup {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-bar__brand {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: var(--ice);
+  letter-spacing: 0.02em;
+}
+
+.top-bar__mark {
+  width: 10px;
+  height: 10px;
+  border-radius: 2px;
+  background: var(--monoprix-red);
+  box-shadow: 0 0 8px var(--monoprix-red-glow);
+}
+
+.top-bar__network-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  font-family: var(--font-body);
+  color: var(--white);
+  background: linear-gradient(135deg, var(--puniq-blue-light), var(--puniq-blue));
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  white-space: nowrap;
+  box-shadow: 0 0 14px rgba(76, 111, 239, 0.45);
+  transition: box-shadow 0.2s, transform 0.15s, opacity 0.2s, background 0.2s;
+}
+
+.top-bar__network-btn:hover:not(:disabled) {
+  box-shadow: 0 0 22px rgba(76, 111, 239, 0.65);
+  transform: translateY(-1px);
+}
+
+.top-bar__network-btn:disabled {
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: none;
+  cursor: default;
+  transform: none;
+}
+
+.top-bar__network-icon {
+  flex-shrink: 0;
+  color: currentColor;
+}
+
+.top-bar__network-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--puniq-blue);
+  background: var(--white);
+  border-radius: 999px;
+  font-variant-numeric: tabular-nums;
+}
+
+.top-bar__network-btn:disabled .top-bar__network-badge {
+  color: var(--text-muted);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.top-bar__network-badge.is-flashing {
+  animation: top-bar-badge-pulse 0.7s ease-out;
+}
+
+@keyframes top-bar-badge-pulse {
+  0% {
+    transform: scale(1);
+  }
+  30% {
+    transform: scale(1.35);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.top-bar__tagline {
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  white-space: nowrap;
+}

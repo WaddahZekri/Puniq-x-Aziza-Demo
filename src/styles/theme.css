@@ -1,0 +1,45 @@
+:root {
+  --puniq-navy: #0B1B3F;
+  --puniq-navy-2: #12285C;
+  --puniq-blue: #1541C4;
+  --puniq-blue-light: #4C6FEF;
+  --ice: #E8EDFB;
+  --text-muted: #8895B8;
+  --monoprix-red: #E80006;
+  --monoprix-red-glow: rgba(232,0,6,0.45);
+  --amber: #F5A623;
+  /* Marker/glow companions for the 3-tier store severity system (map +
+     sidebar) — same hues as --puniq-blue-light/--status-warn/--status-danger,
+     pre-mixed to the glow opacity those tokens' own callers already use. */
+  --puniq-blue-light-glow: rgba(76,111,239,0.45);
+  --status-warn-glow: rgba(245,166,35,0.45);
+  --status-danger-glow: rgba(228,72,61,0.45);
+  /* Heavily desaturated and lightened relative to --amber's full
+     saturation — reads as a soft warm tint for headline numbers rather
+     than a warning/caution color. ~5.7:1 contrast against the dark navy
+     card backgrounds this sits on (WCAG AA for normal text). */
+  --puniq-amber-muted: #B69C72;
+  --status-good: #2ECC71;
+  --status-warn: #F5A623;
+  --status-danger: #E4483D;
+  --white: #FFFFFF;
+  --card-border: rgba(255,255,255,0.08);
+  --card-border-light: rgba(11,27,63,0.10);
+
+  --protocol-modbus: var(--amber);
+  --protocol-bacnet: var(--status-good);
+  --protocol-knx: #8B5CF6;
+  --protocol-mqtt: var(--puniq-blue-light);
+
+  --font-heading: 'Cambria', 'Georgia', serif;
+  --font-body: -apple-system, 'Segoe UI', 'Inter', Arial, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+}
+
+body {
+  font-family: var(--font-body);
+}

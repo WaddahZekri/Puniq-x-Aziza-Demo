@@ -1,0 +1,1856 @@
+[
+  {
+    "code": "1001",
+    "storename": "Raoued - Immeuble Yasmine",
+    "ville": "Raoued",
+    "delegation": "Raoued",
+    "address": "Route de Raouad KM 1.5 RDC Immeuble Yasmine",
+    "lat": 36.883847,
+    "lon": 10.184658
+  },
+  {
+    "code": "1002",
+    "storename": "Ezzouhour - Rue de la Menthe",
+    "ville": "Ezzouhour",
+    "delegation": "Ezzouhour",
+    "address": "65 Rue de la menthe cité",
+    "lat": 36.7961694,
+    "lon": 10.1305514
+  },
+  {
+    "code": "1003",
+    "storename": "Msaken - Rue El Joumhouria",
+    "ville": "Msaken",
+    "delegation": "Msaken",
+    "address": "Résidence Chahed Rue El Joumhouria",
+    "lat": 35.731167,
+    "lon": 10.578422
+  },
+  {
+    "code": "1004",
+    "storename": "Jammel - Rue Ibn Khaldoun",
+    "ville": "Jemmel",
+    "delegation": "Jemmal",
+    "address": "Rue Ibn Khaldoun Jammel Immeuble Chbil Gzara",
+    "lat": 35.621103,
+    "lon": 10.757256
+  },
+  {
+    "code": "1005",
+    "storename": "Sousse Sahloul - Lot N° MU 19",
+    "ville": "Sahloul",
+    "delegation": "Sousse Jawhara",
+    "address": "Lot N° MU 19",
+    "lat": 35.836692,
+    "lon": 10.596
+  },
+  {
+    "code": "1006",
+    "storename": "Kalaa-Kebira - Rue 20 Mars",
+    "ville": "Kalâa Kebira",
+    "delegation": "Kalâa Kebira",
+    "address": "Rue 20 Mars",
+    "lat": 35.869464,
+    "lon": 10.531092
+  },
+  {
+    "code": "1007",
+    "storename": "Sousse Riadh - Rue Ibn Charef",
+    "ville": "Sousse Riadh",
+    "delegation": "Sousse Riadh",
+    "address": "Rue Ibn Charef",
+    "lat": 35.801083,
+    "lon": 10.595603
+  },
+  {
+    "code": "1008",
+    "storename": "Barraket Essahel - Sise GP1",
+    "ville": "Hammamet",
+    "delegation": "Hammamet",
+    "address": "Sise à GP1 Baraket Esahel (en face de poste police national)",
+    "lat": 36.408264,
+    "lon": 10.561525
+  },
+  {
+    "code": "1009",
+    "storename": "Kalaa Seghira - Ave Habib Bourguiba",
+    "ville": "Kalâa Seghira",
+    "delegation": "Kalâa Seghira",
+    "address": "Avenue Habib Bourguiba",
+    "lat": 35.825269,
+    "lon": 10.560025
+  },
+  {
+    "code": "1010",
+    "storename": "Le Kram - Ave 13 Août",
+    "ville": "Le Kram",
+    "delegation": "Le Kram",
+    "address": "35 Avenue 13 Août / 46 Avenue 14 Janvier",
+    "lat": 36.846367,
+    "lon": 10.312325
+  },
+  {
+    "code": "1011",
+    "storename": "Ain Zaghouan - Rue Osmane El Bahri",
+    "ville": "Ain Zaghouan",
+    "delegation": "La Goulette",
+    "address": "32 Rue Osmane El Bahri",
+    "lat": 36.826941,
+    "lon": 10.31151
+  },
+  {
+    "code": "1012",
+    "storename": "Jammel 2 - Ave Hassen El Borji",
+    "ville": "Jemmel",
+    "delegation": "Jemmal",
+    "address": "11 Avenue Hassen El Borji",
+    "lat": 35.626072,
+    "lon": 10.761656
+  },
+  {
+    "code": "1013",
+    "storename": "Kairouan Sud - Route Haffouz",
+    "ville": "Kairouan",
+    "delegation": "Kairouan Sud",
+    "address": "Avenue Mongi Slim route Haffouz (en face du mosquée Taher Maamir)",
+    "lat": 35.671956,
+    "lon": 10.088086
+  },
+  {
+    "code": "1014",
+    "storename": "Sidi Bouali - Ave Habib Bourguiba",
+    "ville": "Sidi Bou Ali",
+    "delegation": "Sidi Bou Ali",
+    "address": "Avenue Habib Bourguiba",
+    "lat": 35.954472,
+    "lon": 10.473336
+  },
+  {
+    "code": "1015",
+    "storename": "Menzel Bouzelfa - Place de l'indépendance",
+    "ville": "Menzel Bouzelfa",
+    "delegation": "Menzel Bouzelfa",
+    "address": "6 Place de l'indépendance",
+    "lat": 36.681528,
+    "lon": 10.584739
+  },
+  {
+    "code": "1016",
+    "storename": "Kairouan Nord - Ave El Moez Ibn Badis",
+    "ville": "Kairouan",
+    "delegation": "Kairouan Nord",
+    "address": "23 Avenue El Moez Ibn Badis Kairouan Nord (prés du marché El Hajam)",
+    "lat": 35.677958,
+    "lon": 10.089053
+  },
+  {
+    "code": "1017",
+    "storename": "Moknine - Ave Farhat Hached",
+    "ville": "Moknine",
+    "delegation": "Moknine",
+    "address": "Avenue Farhat Hached",
+    "lat": 35.626808,
+    "lon": 10.900739
+  },
+  {
+    "code": "1018",
+    "storename": "Bembla - Ave Salem Bouhajeb",
+    "ville": "Bembla",
+    "delegation": "Bembla",
+    "address": "Avenue Salem Bouhajeb",
+    "lat": 35.693968,
+    "lon": 10.789235
+  },
+  {
+    "code": "1019",
+    "storename": "Ettadhamen - Ave Ibn Khaldoun",
+    "ville": "Ettadhamen",
+    "delegation": "Cité Ettadhamen",
+    "address": "526 Avenue Ibn Khaldoun",
+    "lat": 36.838111,
+    "lon": 10.111942
+  },
+  {
+    "code": "1020",
+    "storename": "Akouda - Rue Ali Laadhari",
+    "ville": "Akouda",
+    "delegation": "Akouda",
+    "address": "Rue Ali Laadhari",
+    "lat": 35.866822,
+    "lon": 10.571242
+  },
+  {
+    "code": "1021",
+    "storename": "Route Raoued Plage - Prés De Café Chams Assil",
+    "ville": "Raoued",
+    "delegation": "Raoued",
+    "address": "Rte de Raoued prés de café Chams Assil",
+    "lat": 36.956008,
+    "lon": 10.199153
+  },
+  {
+    "code": "1022",
+    "storename": "Hammamet - Ave De La Libération El Hwanet",
+    "ville": "Hammamet",
+    "delegation": "Hammamet",
+    "address": "3 et 4 Avenue de la libération",
+    "lat": 36.401897,
+    "lon": 10.624175
+  },
+  {
+    "code": "1023",
+    "storename": "El Alia - Ave Habib Bourguiba",
+    "ville": "El Alia",
+    "delegation": "El Alia",
+    "address": "Avenue Habib Bourguiba",
+    "lat": 37.17065,
+    "lon": 10.031631
+  },
+  {
+    "code": "1024",
+    "storename": "Ettadhamen 105 - Rue 7 Novembre",
+    "ville": "Ettadhamen",
+    "delegation": "Cité Ettadhamen",
+    "address": "N° 498 rue 7 Novembre",
+    "lat": 36.838058,
+    "lon": 10.104978
+  },
+  {
+    "code": "1025",
+    "storename": "Sidi Abdelhamid - Ave Ibn Khaldoun Cité Souisse",
+    "ville": "Sousse",
+    "delegation": "Sousse Jawhara",
+    "address": "Avenue Ibn Khaldoun Cité Souisse",
+    "lat": 35.814628,
+    "lon": 10.640508
+  },
+  {
+    "code": "1027",
+    "storename": "Manzel Bourguiba Ennajah - Rue Constitution Cité Najeh",
+    "ville": "Bizerte",
+    "delegation": "Menzel Bourguiba",
+    "address": "N°38 Rue Constitution Cité Najeh",
+    "lat": 37.15094,
+    "lon": 9.784456
+  },
+  {
+    "code": "1028",
+    "storename": "Sfax Route El Ain - Route El Ain Km 5",
+    "ville": "Sfax",
+    "delegation": "Sfax Sud",
+    "address": "Route El Ain km 5",
+    "lat": 34.764747,
+    "lon": 10.713161
+  },
+  {
+    "code": "1029",
+    "storename": "Kelibia - Ave Des Martyrs",
+    "ville": "Kélibia",
+    "delegation": "Kélibia",
+    "address": "Avenue des Martyrs",
+    "lat": 36.8410541,
+    "lon": 11.103013
+  },
+  {
+    "code": "1030",
+    "storename": "Chebba - Ave Habib Bourguiba",
+    "ville": "Chebba",
+    "delegation": "Chebba",
+    "address": "Avenue Habib Bourguiba",
+    "lat": 35.237236,
+    "lon": 11.1149
+  },
+  {
+    "code": "1031",
+    "storename": "Hammamet La Gare - Ave El Kowait",
+    "ville": "Hammamet",
+    "delegation": "Hammamet",
+    "address": "Avenue El Kowait",
+    "lat": 36.406347,
+    "lon": 10.606883
+  },
+  {
+    "code": "1032",
+    "storename": "Ibn Sina - Ave Abakrat E11 Avicenne",
+    "ville": "El Kabaria",
+    "delegation": "El Kabaria",
+    "address": "Avenue Abakrat 10656 E11 Avicenne",
+    "lat": 36.759069,
+    "lon": 10.186989
+  },
+  {
+    "code": "1033",
+    "storename": "Teboulba - Ave Habib Bourguiba",
+    "ville": "Teboulba",
+    "delegation": "Teboulba",
+    "address": "Avenue Habib Bourguiba",
+    "lat": 35.639311,
+    "lon": 10.968411
+  },
+  {
+    "code": "1035",
+    "storename": "Mhamdia - Ave De La Liberté Cité Echebbi",
+    "ville": "Mohammedia",
+    "delegation": "Mohamedia",
+    "address": "Avene de la liberté Cité Echebbi",
+    "lat": 36.673803,
+    "lon": 10.1559
+  },
+  {
+    "code": "1036",
+    "storename": "Douar Hicher - Ave Des Martyrs",
+    "ville": "Douar Hicher",
+    "delegation": "Douar Hicher",
+    "address": "Avenue des Martyrs",
+    "lat": 36.826089,
+    "lon": 10.096311
+  },
+  {
+    "code": "1037",
+    "storename": "Sfax Kassas N° 5 - Route Caied M hamed",
+    "ville": "Sfax Ville",
+    "delegation": "Sfax Médina",
+    "address": "kassas N° 5 Route Caied M'hamed",
+    "lat": 34.753225,
+    "lon": 10.753422
+  },
+  {
+    "code": "1038",
+    "storename": "Monastir - Ave Taieb El Mhiri",
+    "ville": "Monastir",
+    "delegation": "Monastir",
+    "address": "Avenue Taieb El Mhiri",
+    "lat": 35.76764173550742,
+    "lon": 10.821573425471772
+  },
+  {
+    "code": "1039",
+    "storename": "Menzel Tamim - Ave Mohamed Ben Fadhel",
+    "ville": "Manzel Temime",
+    "delegation": "Menzel Temime",
+    "address": "Avenue Mohamed Ben Fadhel",
+    "lat": 36.78312681735441,
+    "lon": 10.990069716602306
+  },
+  {
+    "code": "1040",
+    "storename": "Dar Fadhal-Soukra - Ave De L aéroport",
+    "ville": "Soukra",
+    "delegation": "Soukra",
+    "address": "41 Bis Avenue de L' aéroport Dar fadhal",
+    "lat": 36.8686709,
+    "lon": 10.2409092
+  },
+  {
+    "code": "1041",
+    "storename": "Nabeul-Ville - Ave 2 Mars 1934 Sidi Achour",
+    "ville": "Nabeul",
+    "delegation": "Nabeul",
+    "address": "Avenue 2 Mars 1934 Sidi Achour",
+    "lat": 36.455294959252456,
+    "lon": 10.725957186508172
+  },
+  {
+    "code": "1042",
+    "storename": "Sfax Kaid Mohamed - Route Caied M hamed",
+    "ville": "Sfax",
+    "delegation": "Sfax Médina",
+    "address": "Route caied m'hamed",
+    "lat": 34.748589,
+    "lon": 10.7579
+  },
+  {
+    "code": "1043",
+    "storename": "El Wahat -",
+    "ville": "Tunis",
+    "delegation": "La Goulette",
+    "address": "El Aouina délégation La goulette Tunis",
+    "lat": 36.8595,
+    "lon": 10.265672
+  },
+  {
+    "code": "1044",
+    "storename": "Mahdia Route de Tunis - Ave de Tunis",
+    "ville": "Mahdia",
+    "delegation": "Mahdia",
+    "address": "Avenue de Tunis",
+    "lat": 35.50496905529777,
+    "lon": 11.048541512897478
+  },
+  {
+    "code": "1045",
+    "storename": "Mahdia Hiboun - Ave Omar Ibn Khatab",
+    "ville": "Mahdia",
+    "delegation": "Mahdia",
+    "address": "Avenue Omar Ibn Khatab Hiboun Mahdia",
+    "lat": 35.513939,
+    "lon": 11.041503
+  },
+  {
+    "code": "1046",
+    "storename": "Douar Hicher 2 - Ave Khaled Ibn El Walid",
+    "ville": "Manouba",
+    "delegation": "Douar Hicher",
+    "address": "510 Avenue Khaled Ibn El Walid Douar Hicher",
+    "lat": 36.82435,
+    "lon": 10.082825
+  },
+  {
+    "code": "1047",
+    "storename": "Riadh El Andalous - Rue Ibn Khaldoun",
+    "ville": "Ariana",
+    "delegation": "Ariana Médina",
+    "address": "25 rue Ibn Khaldoun Ariana",
+    "lat": 36.869475,
+    "lon": 10.183411
+  },
+  {
+    "code": "1048",
+    "storename": "Mhamdia 2 - Ave De La Liberté",
+    "ville": "Mohamedia",
+    "delegation": "Mohamedia",
+    "address": "1 Avenue de la liberté",
+    "lat": 36.680847,
+    "lon": 10.157006
+  },
+  {
+    "code": "1049",
+    "storename": "Ghannouch Gabès - Ave Habib Bourguiba",
+    "ville": "Gabès",
+    "delegation": "Ghannouche",
+    "address": "Avenue Habib Bourguiba Gannouch",
+    "lat": 33.93971596430468,
+    "lon": 10.065087300594344
+  },
+  {
+    "code": "1050",
+    "storename": "Menzel Bourguiba - Rue Hedi Chaker",
+    "ville": "Bizerte",
+    "delegation": "Menzel Bourguiba",
+    "address": "N° 18 et 20 rue Hedi Chaker Manzel Bourguiba",
+    "lat": 37.15177710259267,
+    "lon": 9.79153916931151
+  },
+  {
+    "code": "1051",
+    "storename": "La Marsa Erriadh - Rue Hedi Haker Cité Riadh",
+    "ville": "Tunis",
+    "delegation": "La Marsa",
+    "address": "N°65 Rue Hedi Haker Cité Riadh",
+    "lat": 36.8864514,
+    "lon": 10.3153814
+  },
+  {
+    "code": "1052",
+    "storename": "El Ghazala - Lot 6861El Madina",
+    "ville": "Ariana",
+    "delegation": "Raoued",
+    "address": "Lotissement N° 6861 El Madina El Fadhela El Ghazela",
+    "lat": 36.89134741934217,
+    "lon": 10.17157755952453
+  },
+  {
+    "code": "1053",
+    "storename": "Slimane - Ave 14 Janvier",
+    "ville": "Soliman",
+    "delegation": "Soliman",
+    "address": "47 Avenue 14 Janvier",
+    "lat": 36.698603,
+    "lon": 10.490817
+  },
+  {
+    "code": "1054",
+    "storename": "Enfidha - Rue El Jawaher Cité Riadh",
+    "ville": "Sousse",
+    "delegation": "Enfidha",
+    "address": "67 rue El Jawaher cité riadh Enfidha",
+    "lat": 36.133631,
+    "lon": 10.376475
+  },
+  {
+    "code": "1055",
+    "storename": "Boumhell - Ave De Paris",
+    "ville": "Boumhel",
+    "delegation": "Boumhel El Bassatine",
+    "address": "20 Avenue de Paris",
+    "lat": 36.7343632,
+    "lon": 10.2988401
+  },
+  {
+    "code": "1056",
+    "storename": "Ezzayatine - Rue 6320 Cité Les Oliviers",
+    "ville": "Tunis",
+    "delegation": "El Omrane",
+    "address": "8 Rue 6320 cité les oliviers El omrane",
+    "lat": 36.823703,
+    "lon": 10.154808
+  },
+  {
+    "code": "1057",
+    "storename": "Korba - Ave Farhat Hached",
+    "ville": "Nabeul",
+    "delegation": "Korba",
+    "address": "Avenue Farhat Hached Korba nord",
+    "lat": 36.580597,
+    "lon": 10.859594
+  },
+  {
+    "code": "1058",
+    "storename": "Sahline - Ave Habib Belahouane",
+    "ville": "Monastir",
+    "delegation": "Sahline",
+    "address": "N° 49 Avenue Habib Belahouane Sahline",
+    "lat": 35.750047,
+    "lon": 10.712244
+  },
+  {
+    "code": "1059",
+    "storename": "Elmar - Sidi El Béchir",
+    "ville": "Tunis",
+    "delegation": "Sidi El Béchir",
+    "address": "N° 214 et 216 Rue El MARR",
+    "lat": 36.7936533,
+    "lon": 10.1692926
+  },
+  {
+    "code": "1060",
+    "storename": "Beni Khalled - Rue Mahmoud Belahsan",
+    "ville": "Béni Khalled",
+    "delegation": "Béni Khalled",
+    "address": "Rue Mahmoud Belahsan Beni Khalled",
+    "lat": 36.648922,
+    "lon": 10.590011
+  },
+  {
+    "code": "1061",
+    "storename": "Borj Louzir - Ave Mostapha Mohsen",
+    "ville": "Ariana",
+    "delegation": "Soukra",
+    "address": "Avenue Mostapha Mohsen Borj Louzir",
+    "lat": 36.868508,
+    "lon": 10.210089
+  },
+  {
+    "code": "1062",
+    "storename": "El Mourouj 5 - Rue 20 Mars",
+    "ville": "El Mourouj 05",
+    "delegation": "El Mourouj",
+    "address": "N° 77 rue 20 Mars",
+    "lat": 36.71408680163263,
+    "lon": 10.20645769444274
+  },
+  {
+    "code": "1063",
+    "storename": "Jara Gabès - Rue El Waha",
+    "ville": "Gabès",
+    "delegation": "Gabès Médina",
+    "address": "Rue El Waha Djara",
+    "lat": 33.968564,
+    "lon": 9.9821983
+  },
+  {
+    "code": "1064",
+    "storename": "Somrane - Rue 4098",
+    "ville": "Tunis",
+    "delegation": "Ezzouhour",
+    "address": "24 rue 4098 Essomrane Tunis",
+    "lat": 36.798539,
+    "lon": 10.144031
+  },
+  {
+    "code": "1065",
+    "storename": "Fouchana - Cité El Amal",
+    "ville": "Fouchana",
+    "delegation": "Fouchana",
+    "address": "10 rue Mahmoud El Matri Cité El Amal",
+    "lat": 36.704853,
+    "lon": 10.159775
+  },
+  {
+    "code": "1066",
+    "storename": "Ksour Essef - Ave Hedi Chaker",
+    "ville": "Ksour Essef",
+    "delegation": "Ksour Essef",
+    "address": "N° 188 Avenue Hedi Chaker",
+    "lat": 35.2972002,
+    "lon": 10.6974077
+  },
+  {
+    "code": "1067",
+    "storename": "El Manzel Gabès - Ave De La République",
+    "ville": "Gabès",
+    "delegation": "Gabès Médina",
+    "address": "Avenue de la république El Manzel Gabès",
+    "lat": 33.8804327,
+    "lon": 10.0906231
+  },
+  {
+    "code": "1068",
+    "storename": "Kalaa Kebira 2 - Ave Habib Thameur",
+    "ville": "Kalâa Kebira",
+    "delegation": "Kalâa Kebira",
+    "address": "Avenue Habib Thameur",
+    "lat": 35.87486575033912,
+    "lon": 10.53605971163939
+  },
+  {
+    "code": "1069",
+    "storename": "Monastir 2 - Rue Mohammadia Cité VI",
+    "ville": "Monastir",
+    "delegation": "Monastir",
+    "address": "Rue Mohammadia Cité VI",
+    "lat": 35.770492,
+    "lon": 10.829725
+  },
+  {
+    "code": "1070",
+    "storename": "Beja - Rue Khaireddine",
+    "ville": "Béja",
+    "delegation": "Béja Nord",
+    "address": "Fait le coin entre rue Khaireddine et Ain Chams",
+    "lat": 36.72663,
+    "lon": 9.181772
+  },
+  {
+    "code": "1071",
+    "storename": "Hedi Nouira - Rue Omar Ibn Khatab",
+    "ville": "Ariana",
+    "delegation": "Soukra",
+    "address": "Rue Omar Ibn Khatab cité à Hedi Nouira Soukra",
+    "lat": 36.869486,
+    "lon": 10.195628
+  },
+  {
+    "code": "1072",
+    "storename": "Kairouan Nord 2 - Ave El Moez Iben Badis",
+    "ville": "kairouan",
+    "delegation": "Kairouan Nord",
+    "address": "11 Avenue el moez iben badis kairouan Nord",
+    "lat": 35.680267,
+    "lon": 10.096842
+  },
+  {
+    "code": "1073",
+    "storename": "Sidi Salah - Ave Jawdet El Hayet Chotrana",
+    "ville": "Ariana",
+    "delegation": "Soukra",
+    "address": "N°101 Avenue Jawdet El Hayet Chotrana Soukra",
+    "lat": 36.8869,
+    "lon": 10.217053
+  },
+  {
+    "code": "1075",
+    "storename": "Bizerte - Cité El Nakhla Route Nadhour",
+    "ville": "Bizerte",
+    "delegation": "Bizerte Nord",
+    "address": "N°32 cité El Nakhla route Nadhour N°953",
+    "lat": 37.28128,
+    "lon": 9.854822
+  },
+  {
+    "code": "1076",
+    "storename": "Menzel Temim 2 - Ave De L environnement",
+    "ville": "Manzel Temime",
+    "delegation": "Menzel Temime",
+    "address": "Fait le coin entre avenue de l'environnement et rue Abou El Kacem Echebbi",
+    "lat": 36.777308,
+    "lon": 10.991175
+  },
+  {
+    "code": "1077",
+    "storename": "Fouchana 2 - Ave De La Liberté",
+    "ville": "Fouchana",
+    "delegation": "Fouchana",
+    "address": "Avenue de la liberté",
+    "lat": 36.69453326031875,
+    "lon": 10.165814746032726
+  },
+  {
+    "code": "1078",
+    "storename": "Denden El-Amal - Rue Ksar Said",
+    "ville": "Manouba",
+    "delegation": "Manouba",
+    "address": "Rue Ksar Said Den Den Manouba",
+    "lat": 36.811833,
+    "lon": 10.111497
+  },
+  {
+    "code": "1079",
+    "storename": "Denden2 - Rue Mohamed Ali",
+    "ville": "Den Den",
+    "delegation": "Manouba",
+    "address": "N° 40 rue Mohamed Ali Den Den",
+    "lat": 36.804475,
+    "lon": 10.113092
+  },
+  {
+    "code": "1080",
+    "storename": "Tebourba - Ave Habib Bourguiba",
+    "ville": "Manouba",
+    "delegation": "Tebourba",
+    "address": "Avenue Habib Bourguiba",
+    "lat": 36.83001,
+    "lon": 9.840978
+  },
+  {
+    "code": "1081",
+    "storename": "Sijoumi - Rue 4883",
+    "ville": "Tunis",
+    "delegation": "Séjoumi",
+    "address": "N° 65 rue 4883",
+    "lat": 36.76413559055511,
+    "lon": 10.114471319783087
+  },
+  {
+    "code": "1082",
+    "storename": "Bouhsina - Ave Abou Hamid El Ghazeli",
+    "ville": "Sousse",
+    "delegation": "Sousse Jawhara",
+    "address": "Avenue Abou Hamid El Ghazeli et rue Younes Belhadj Ali cité Bouhsina",
+    "lat": 35.816869,
+    "lon": 10.617942
+  },
+  {
+    "code": "1083",
+    "storename": "Bouargoub - Ave 14 Janvier",
+    "ville": "Nabeul",
+    "delegation": "Bou Argoub",
+    "address": "18 Avenue 14 Janvier",
+    "lat": 36.52810323360978,
+    "lon": 10.554268673610675
+  },
+  {
+    "code": "1084",
+    "storename": "Mornag - Rue Mongi Slim",
+    "ville": "Mornag",
+    "delegation": "Mornag",
+    "address": "5 rue Mongi Slim",
+    "lat": 36.68044443880518,
+    "lon": 10.289491093254082
+  },
+  {
+    "code": "1085",
+    "storename": "El Agba - Cité Le Beau Séjour",
+    "ville": "Tunis",
+    "delegation": "El Hrairia",
+    "address": "Cité Le Beau Séjour El Agba",
+    "lat": 36.787822,
+    "lon": 10.084014
+  },
+  {
+    "code": "1086",
+    "storename": "Sfax Route Ain 2 - Rte Ain Km2",
+    "ville": "Sfax",
+    "delegation": "Sfax Ouest",
+    "address": "Rte Ain Km 2 Sfax Sud",
+    "lat": 34.748133,
+    "lon": 10.736942
+  },
+  {
+    "code": "1087",
+    "storename": "Naassen - Ave 14 Janvier Cité Boumaiza",
+    "ville": "Fouchana",
+    "delegation": "Fouchana",
+    "address": "Avenue 14 Janvier cité Boumaiza Naassen",
+    "lat": 36.704958,
+    "lon": 10.234544
+  },
+  {
+    "code": "1088",
+    "storename": "Ariana Essoghra - Jaafer Route Raoued Km5",
+    "ville": "Ariana",
+    "delegation": "Raoued",
+    "address": "Jaafer route raoued km 5 Ariana",
+    "lat": 36.899117,
+    "lon": 10.183819
+  },
+  {
+    "code": "1089",
+    "storename": "Hammam-Lif - Rue Charles Nicolle",
+    "ville": "Hammam Lif",
+    "delegation": "Hammam Lif",
+    "address": "44 rue Charles Nicolle",
+    "lat": 36.72419509502885,
+    "lon": 10.348997466270466
+  },
+  {
+    "code": "1090",
+    "storename": "Bousalem - Rue Khaieddine Boussalem",
+    "ville": "Bou Salem",
+    "delegation": "Bou Salem",
+    "address": "Rue Khaieddine",
+    "lat": 36.60822416286793,
+    "lon": 8.970068796295152
+  },
+  {
+    "code": "1091",
+    "storename": "Zarmdine - Ave Habib Bourguiba",
+    "ville": "Monastir",
+    "delegation": "Zermadine",
+    "address": "RDC N °1 Avenue Habib Bourguiba cité ècole primaire Zeramdine Monastir",
+    "lat": 35.574125,
+    "lon": 10.732778
+  },
+  {
+    "code": "1092",
+    "storename": "Slimane2 Bs - Ave De La République",
+    "ville": "Soliman",
+    "delegation": "Soliman",
+    "address": "N° 128 avenue de la république",
+    "lat": 36.694025,
+    "lon": 10.494347
+  },
+  {
+    "code": "1093",
+    "storename": "Mejez El Bab - Ave Habib Bourguiba",
+    "ville": "Medjez el-Bab",
+    "delegation": "Medjez el-Bab",
+    "address": "Avenue Habib Bourguiba",
+    "lat": 36.648006,
+    "lon": 9.613588199999999
+  },
+  {
+    "code": "1094",
+    "storename": "El Hamma - Rue Habib Bourguiba",
+    "ville": "Gabès",
+    "delegation": "El Hamma",
+    "address": "109 rue Habib Bourguiba El Hamma",
+    "lat": 33.88287,
+    "lon": 9.793953
+  },
+  {
+    "code": "1095",
+    "storename": "Eljem - Ave Habib Bourguiba",
+    "ville": "El Djem",
+    "delegation": "El Djem",
+    "address": "Avenue Habib Bourguiba",
+    "lat": 35.292922,
+    "lon": 10.707664
+  },
+  {
+    "code": "1096",
+    "storename": "Grombelia - Rue 9 Avril 1938",
+    "ville": "Nabeul",
+    "delegation": "Grombalia",
+    "address": "Rue 9 Avril 1938 Grombelia",
+    "lat": 36.601378,
+    "lon": 10.497522
+  },
+  {
+    "code": "1097",
+    "storename": "Rades Med Ali - Ave du Stade",
+    "ville": "Radès",
+    "delegation": "Radès",
+    "address": "4 Avenue du stade",
+    "lat": 36.7709,
+    "lon": 10.273144
+  },
+  {
+    "code": "1098",
+    "storename": "Beja 2 - Rue Erriadh Ksar Bardo",
+    "ville": "Béja",
+    "delegation": "Béja Nord",
+    "address": "Rue Erriadh Ksar Bardo Béja",
+    "lat": 36.7351,
+    "lon": 9.178214
+  },
+  {
+    "code": "1099",
+    "storename": "Sousse Jawhara - Ave 20 Mars 1956",
+    "ville": "Sousse",
+    "delegation": "Sousse Jawhara",
+    "address": "Avenue 20 Mars 1956",
+    "lat": 35.83275,
+    "lon": 10.620831
+  },
+  {
+    "code": "1100",
+    "storename": "Messaadine - Ave Habib Bourguiba",
+    "ville": "Msaken",
+    "delegation": "Msaken",
+    "address": "Avenue Habib Bourguiba Messaaddine",
+    "lat": 35.760219465457986,
+    "lon": 10.597159575393658
+  },
+  {
+    "code": "1101",
+    "storename": "Mnihla - Route De Bizerte KM5",
+    "ville": "Ariana",
+    "delegation": "El Mnihla",
+    "address": "Route de Bizerte KM5 El Mnihla",
+    "lat": 36.844822,
+    "lon": 10.116439
+  },
+  {
+    "code": "1102",
+    "storename": "Jarzouna - Route Du Port",
+    "ville": "Bizerte",
+    "delegation": "Zarzouna",
+    "address": "Route du port zarzouna",
+    "lat": 37.26458,
+    "lon": 9.877397
+  },
+  {
+    "code": "1103",
+    "storename": "Marsa Cite Khalil - Rue Sakiet Youssef Jbal Khaouia",
+    "ville": "Tunis",
+    "delegation": "La Marsa",
+    "address": "Rue Sakiet Youssef Jbal Khaouia la Marsa",
+    "lat": 36.888663776260195,
+    "lon": 10.304670440475453
+  },
+  {
+    "code": "1104",
+    "storename": "Boumhal Ville - Ave De La Liberté",
+    "ville": "Boumhel",
+    "delegation": "Boumhel El Bassatine",
+    "address": "38 Avenue de la liberté",
+    "lat": 36.721453,
+    "lon": 10.301375
+  },
+  {
+    "code": "1105",
+    "storename": "Sejnene Centre - Ave Habib Bourguiba",
+    "ville": "Sejnane",
+    "delegation": "Sejnane",
+    "address": "Croisement Avenue Habib Bourguiba et Avenue Hassan Nour",
+    "lat": 37.058011,
+    "lon": 9.239931
+  },
+  {
+    "code": "1106",
+    "storename": "Bizerte El Bhira - Ave El Amir Abdelkader",
+    "ville": "Bizerte",
+    "delegation": "Bizerte Nord",
+    "address": "il fait le coin entre Avenue El amir Abdelkader et rue Jurgurtha",
+    "lat": 37.28843,
+    "lon": 9.861508
+  },
+  {
+    "code": "1107",
+    "storename": "Makthar Ville - Rue Hedi Chaker",
+    "ville": "Makthar",
+    "delegation": "Makthar",
+    "address": "Croisement rue Hedi Chaker et rue de la république",
+    "lat": 35.858147,
+    "lon": 9.203122
+  },
+  {
+    "code": "1108",
+    "storename": "Zaouiet Sousse - Ave 14 Janvier",
+    "ville": "Sousse",
+    "delegation": "Sousse Riadh",
+    "address": "Avenue 14 Janvier (ancienement avenue 7 Novembre)",
+    "lat": 35.784633,
+    "lon": 10.627264
+  },
+  {
+    "code": "1109",
+    "storename": "Manzel Jemil - Ave Habib Bourguiba",
+    "ville": "Bizerte",
+    "delegation": "Menzel Djemil",
+    "address": "Avenue Habib Bourguiba",
+    "lat": 37.23359,
+    "lon": 9.916844
+  },
+  {
+    "code": "1110",
+    "storename": "Ben Arous El Iskane - Rue Haffouz",
+    "ville": "Ben Arous",
+    "delegation": "Ben Arous",
+    "address": "6 rue Haffouz",
+    "lat": 36.74763419357366,
+    "lon": 10.22104496560669
+  },
+  {
+    "code": "1111",
+    "storename": "Ibn Sina2 - Rue 11034 Ouardia 5",
+    "ville": "El Kabaria",
+    "delegation": "El Kabaria",
+    "address": "rue 11034 Ouardia 5 ibn sina",
+    "lat": 36.747586,
+    "lon": 10.181567169311506
+  },
+  {
+    "code": "1112",
+    "storename": "Melassine - Ave Mostapha Khaznadar",
+    "ville": "Tunis",
+    "delegation": "Séjoumi",
+    "address": "124 avenue Mostapha Khaznadar Mallassine",
+    "lat": 36.800028,
+    "lon": 10.153544
+  },
+  {
+    "code": "1113",
+    "storename": "Ben Arous - Rue Bizerte",
+    "ville": "Ben Arous",
+    "delegation": "Ben Arous",
+    "address": "20 Rue Bizerte",
+    "lat": 36.757583,
+    "lon": 10.223364
+  },
+  {
+    "code": "1114",
+    "storename": "Hammam Zriba - Ave Habib Bourguiba",
+    "ville": "Zaghouan",
+    "delegation": "Ez-Zeriba",
+    "address": "Avenue Habib Bourguiba Hammam Zriba",
+    "lat": 36.35472765596459,
+    "lon": 10.21015128836058
+  },
+  {
+    "code": "1115",
+    "storename": "Gabès El Amal - Ave Omar Ibn Khatab",
+    "ville": "Gabès",
+    "delegation": "Gabès Sud",
+    "address": "2 Avenue Omar Ibn Khatab cité El Amal",
+    "lat": 33.8572333,
+    "lon": 10.0985614
+  },
+  {
+    "code": "1116",
+    "storename": "Jebeniana Centre - Ave Habib Bourguiba",
+    "ville": "Sfax",
+    "delegation": "Jebeniana",
+    "address": "Avenue Habib Bourguiba Jebeniana .",
+    "lat": 35.03315829010592,
+    "lon": 10.909264847885147
+  },
+  {
+    "code": "1117",
+    "storename": "Raoued Jaafer - Route Jaafer",
+    "ville": "Ariana",
+    "delegation": "Raoued",
+    "address": "Fait le coin entre route Jaafer et N° 1 rue Ksar Hlel El Ghazela",
+    "lat": 36.90935,
+    "lon": 10.178158
+  },
+  {
+    "code": "1118",
+    "storename": "Saltnia - Route Saltnia",
+    "ville": "Sfax",
+    "delegation": "Sakiet Eddaïer",
+    "address": "Route Saltnia Km 4 Fsax",
+    "lat": 34.762903,
+    "lon": 10.781856
+  },
+  {
+    "code": "1119",
+    "storename": "Teboulba2 - Ave Ennaser",
+    "ville": "Monastir",
+    "delegation": "Teboulba",
+    "address": "Avenue Ennaser Teboulba",
+    "lat": 35.644444,
+    "lon": 10.970472
+  },
+  {
+    "code": "1121",
+    "storename": "Marsa Bhar Lazrag - Ave Charle De Gaulle",
+    "ville": "Tunis",
+    "delegation": "La Marsa",
+    "address": "45 Avenue Charle de Gaulle Bhar Lazreg",
+    "lat": 36.87670558230439,
+    "lon": 10.29412537301634
+  },
+  {
+    "code": "1122",
+    "storename": "Ettadhamen Marche - Ave 105",
+    "ville": "Ariana",
+    "delegation": "Cité Ettadhamen",
+    "address": "N° 90 Avenue 105 Ettadhamen",
+    "lat": 36.832233,
+    "lon": 10.110236
+  },
+  {
+    "code": "1123",
+    "storename": "Menzel Bouzelfa2 - Ave De L envirenement",
+    "ville": "Menzel Bouzelfa",
+    "delegation": "Menzel Bouzelfa",
+    "address": "Avenue de l'envirenement",
+    "lat": 36.8298624,
+    "lon": 11.077019
+  },
+  {
+    "code": "1124",
+    "storename": "Ghardimaou - Ave Habib Bourguiba",
+    "ville": "Ghardimaou",
+    "delegation": "Ghardimaou",
+    "address": "Avenue Habib Bourguiba Ghardimaou",
+    "lat": 36.44815,
+    "lon": 8.440864
+  },
+  {
+    "code": "1125",
+    "storename": "Raoued Sidi Amor - Ave De La Terre Sidi Amor",
+    "ville": "Ariana",
+    "delegation": "Raoued",
+    "address": "Avenue de la terre Sidi Amor Raoued",
+    "lat": 36.944969,
+    "lon": 10.175239
+  },
+  {
+    "code": "1126",
+    "storename": "Ras Jebel1 - Ave 14 Janvier",
+    "ville": "Bizerte",
+    "delegation": "Ras Djebel",
+    "address": "Avenue 14 Janvier Ras Jbal",
+    "lat": 37.217725,
+    "lon": 10.128522
+  },
+  {
+    "code": "1127",
+    "storename": "Ouardanine - Rue Farhat Hached",
+    "ville": "Monastir",
+    "delegation": "Ouerdanine",
+    "address": "Rue Farhat Hached Ouardanine Monastir",
+    "lat": 35.710069,
+    "lon": 10.675842
+  },
+  {
+    "code": "1128",
+    "storename": "Sfax Route Gabes - Route Gabès Km 7",
+    "ville": "Sfax",
+    "delegation": "Sfax Sud",
+    "address": "Route Gabès Km 7",
+    "lat": 34.687319,
+    "lon": 10.706314
+  },
+  {
+    "code": "1129",
+    "storename": "Ksar Hellal 1 - Rue Med Gannoun",
+    "ville": "Monastir",
+    "delegation": "Ksar Helal",
+    "address": "Rue Med Gannoun",
+    "lat": 35.653467,
+    "lon": 10.873694
+  },
+  {
+    "code": "1130",
+    "storename": "Hammam Sousse1 - Ave De La République",
+    "ville": "Hammam Sousse",
+    "delegation": "Hammam Sousse",
+    "address": "Avenue de la République",
+    "lat": 35.8575355,
+    "lon": 10.5974313
+  },
+  {
+    "code": "1133",
+    "storename": "Chebbaou - Rue Hatem Ettaii",
+    "ville": "Oued Ellil",
+    "delegation": "Oued Ellil",
+    "address": "4rue Hatem Ettaii Chabaw",
+    "lat": 36.844175,
+    "lon": 10.038358
+  },
+  {
+    "code": "1134",
+    "storename": "Ennasr - Ave De Lére Nouvelle",
+    "ville": "Ariana",
+    "delegation": "Ariana",
+    "address": "Avenue de l'ére nouvelle Ennasr",
+    "lat": 36.858728,
+    "lon": 10.165928
+  },
+  {
+    "code": "1135",
+    "storename": "Ksar Helal 2 - Ave Farhat Hached",
+    "ville": "Monastir",
+    "delegation": "Ksar Helal",
+    "address": "Avenue Farhat Hached Ksar hlel Rte jammel",
+    "lat": 35.641680819969515,
+    "lon": 10.885470373016343
+  },
+  {
+    "code": "1136",
+    "storename": "Dar Chaaban - Ave Habib Bourguiba",
+    "ville": "Nabeul",
+    "delegation": "Dar Chaâbane El Fehri",
+    "address": "123 avenue Habib Bourguiba Dar Chaaben el Fehri",
+    "lat": 36.459014,
+    "lon": 10.747231
+  },
+  {
+    "code": "1137",
+    "storename": "El Fahs - Rue Hedi Chaker",
+    "ville": "El Fahs",
+    "delegation": "El Fahs",
+    "address": "Rue Hedi Chaker",
+    "lat": 36.3964289,
+    "lon": 10.1432696
+  },
+  {
+    "code": "1138",
+    "storename": "Ksar Hellal3 - Rue Jaouher Essikili",
+    "ville": "Monastir",
+    "delegation": "Ksar Helal",
+    "address": "Rue Jaouher essikili Ksar Hlel",
+    "lat": 35.64847287723577,
+    "lon": 10.883525961971289
+  },
+  {
+    "code": "1139",
+    "storename": "Cite Ennozha - Rue Ahmed Khabtheni",
+    "ville": "Ariana",
+    "delegation": "Ariana Médina",
+    "address": "23 Rue Ahmed Khabtheni",
+    "lat": 36.86335578909379,
+    "lon": 10.197615017196666
+  },
+  {
+    "code": "1140",
+    "storename": "Haffouz - Ave Taieb Mhiri",
+    "ville": "Kairouan",
+    "delegation": "Haffouz",
+    "address": "Fait le coin entre avenue Taieb Mhiri et Rue Ali Zouaoui",
+    "lat": 35.635562601927255,
+    "lon": 9.676560526458728
+  },
+  {
+    "code": "1141",
+    "storename": "Cite Ettahrir - Ave De La Fidélité",
+    "ville": "Tunis",
+    "delegation": "Ettahrir",
+    "address": "3 Avenue de la fidélité",
+    "lat": 36.82301440796612,
+    "lon": 10.126198575393678
+  },
+  {
+    "code": "1142",
+    "storename": "Denden3 - Rue De L indépendance",
+    "ville": "Manouba",
+    "delegation": "Manouba",
+    "address": "17 rue de l'indépendance",
+    "lat": 36.802425,
+    "lon": 10.105994
+  },
+  {
+    "code": "1143",
+    "storename": "Médenine Route Gabes - Ave Route Gabes KM 1",
+    "ville": "Médenine",
+    "delegation": "Médenine Nord",
+    "address": "Avenue route Gabès KM 1",
+    "lat": 33.354425,
+    "lon": 10.478906
+  },
+  {
+    "code": "1145",
+    "storename": "Cite Khadhra1 - Ave Louis Braille",
+    "ville": "Tunis",
+    "delegation": "Cité El Khadhra",
+    "address": "117 Avenue Louis Braille",
+    "lat": 36.8309,
+    "lon": 10.194828
+  },
+  {
+    "code": "1147",
+    "storename": "El Fahs2 - Place 7 Novembre",
+    "ville": "El Fahs",
+    "delegation": "El Fahs",
+    "address": "Place 7 Novembre",
+    "lat": 36.4091188,
+    "lon": 10.1423172
+  },
+  {
+    "code": "1148",
+    "storename": "Sbikha - Ave 7 Novembre",
+    "ville": "Kairouan",
+    "delegation": "Sbikha",
+    "address": "Avenue 7 Novembre",
+    "lat": 35.93239685512514,
+    "lon": 10.021158656414029
+  },
+  {
+    "code": "1149",
+    "storename": "Kelibia2 - Ave Ali Belahouane",
+    "ville": "Kélibia",
+    "delegation": "Kélibia",
+    "address": "Avenue Ali Belahouane",
+    "lat": 36.852039,
+    "lon": 11.091753
+  },
+  {
+    "code": "1150",
+    "storename": "Bir El Bey - Rue Amir Abd El Kader",
+    "ville": "Hammam Chatt",
+    "delegation": "Hammam Chatt",
+    "address": "Fait le coin entre Rue Amir Abd El Kader et Rue les Pyramides",
+    "lat": 36.706756,
+    "lon": 10.379425
+  },
+  {
+    "code": "1151",
+    "storename": "Bennane - Ave Habib Bourguiba",
+    "ville": "Monastir",
+    "delegation": "Ksibet El Mediouni",
+    "address": "Avenue Habib Bourguiba Bennane Route Sousse",
+    "lat": 35.676619,
+    "lon": 10.833103
+  },
+  {
+    "code": "1152",
+    "storename": "Ksibet El Mediouni - Rue Abdelhakim Abd Jaoued",
+    "ville": "Ksibet El Mediouni",
+    "delegation": "Ksibet El Mediouni",
+    "address": "Rue Abdelhakim Abd Jaoued",
+    "lat": 35.686639,
+    "lon": 10.842897
+  },
+  {
+    "code": "1153",
+    "storename": "Jdeida - Lotis Guizeni",
+    "ville": "Manouba",
+    "delegation": "Djedeida",
+    "address": "Lotissement Guizeni",
+    "lat": 36.831360972040954,
+    "lon": 9.939357830688484
+  },
+  {
+    "code": "1154",
+    "storename": "Bardo Saidia - Rue Taher Sfar",
+    "ville": "Tunis",
+    "delegation": "Le Bardo",
+    "address": "18 rue Taher Sfar",
+    "lat": 36.803872581322544,
+    "lon": 10.129192169311514
+  },
+  {
+    "code": "1156",
+    "storename": "Msaken2 - Ave Taieb Hachicha",
+    "ville": "Msaken",
+    "delegation": "Msaken",
+    "address": "Avenue Taieb Hachicha",
+    "lat": 35.735247,
+    "lon": 10.580847
+  },
+  {
+    "code": "1157",
+    "storename": "El Ouerdia Bs - Ave 15 Octobre",
+    "ville": "Tunis",
+    "delegation": "El Ouardia",
+    "address": "Immeuble Khalil 1 Avenue 15 Octobre",
+    "lat": 36.76529375848686,
+    "lon": 10.1934456183853
+  },
+  {
+    "code": "1158",
+    "storename": "Cite Ben Younes - Rue Mohamed Ben Uoines",
+    "ville": "Manouba",
+    "delegation": "Manouba",
+    "address": "Lotissement Boutefeha Rue Mohamed Ben Uoines Oued Guiriana",
+    "lat": 36.80208726963507,
+    "lon": 10.099154084655767
+  },
+  {
+    "code": "1162",
+    "storename": "Medenine2 - Ave 2 Mai Route Tataouine",
+    "ville": "Médenine",
+    "delegation": "Médenine Sud",
+    "address": "Avenue 2 mai route tataouine medenine",
+    "lat": 33.337164371967035,
+    "lon": 10.486105968088134
+  },
+  {
+    "code": "1163",
+    "storename": "Bouarada - Place 7 Novembre",
+    "ville": "Siliana",
+    "delegation": "Bou Arada",
+    "address": "Place 7 Novembre",
+    "lat": 36.351208,
+    "lon": 9.623972
+  },
+  {
+    "code": "1164",
+    "storename": "El Yasminette - Route Morneg Km 8",
+    "ville": "Ben Arous",
+    "delegation": "Medina Jedida",
+    "address": "Route Morneg km 8",
+    "lat": 36.73656394121083,
+    "lon": 10.242283101852431
+  },
+  {
+    "code": "1166",
+    "storename": "El Mourouj4 - Ave Des Martyrs",
+    "ville": "El Mourouj 04",
+    "delegation": "El Mourouj",
+    "address": "Avenue des Martyrs Immeuble Mehdi",
+    "lat": 36.718031,
+    "lon": 10.216242
+  },
+  {
+    "code": "1167",
+    "storename": "Cite Ben Younes2 - Lot 114 Cité El Idhaa",
+    "ville": "Manouba",
+    "delegation": "Manouba",
+    "address": "Lot 114 Cité El Idhaa",
+    "lat": 36.795331,
+    "lon": 10.089403
+  },
+  {
+    "code": "1168",
+    "storename": "Gafsa Ennour1 - Ave Palastine Cité Ennour",
+    "ville": "Gafsa",
+    "delegation": "Gafsa Sud",
+    "address": "Avenue Palastine cité Ennour",
+    "lat": 34.43380067668831,
+    "lon": 8.781167542327863
+  },
+  {
+    "code": "1171",
+    "storename": "Sfax Sidi Mansour - Route Sidi Mansour KM 4",
+    "ville": "Sfax",
+    "delegation": "Sakiet Eddaïer",
+    "address": "Route sidi Mansour KM 4 3000 Sfax el Medina",
+    "lat": 34.757842,
+    "lon": 10.790592
+  },
+  {
+    "code": "1172",
+    "storename": "Moknine 2 - Rue De Girofle",
+    "ville": "Monastir",
+    "delegation": "Moknine",
+    "address": "cité des jardins rue de Girofle Moknine",
+    "lat": 35.635731,
+    "lon": 10.899042
+  },
+  {
+    "code": "1173",
+    "storename": "Kasserine - Rue Argoub Mimoun",
+    "ville": "Kasserine Nord",
+    "delegation": "Kasserine Nord",
+    "address": "Rue Argoub Mimoun",
+    "lat": 35.17701846811764,
+    "lon": 8.852115212303175
+  },
+  {
+    "code": "1176",
+    "storename": "Sers - Ave Farhat Hached",
+    "ville": "Le Kef",
+    "delegation": "Es-Sers",
+    "address": "Avenue Farhat Hached",
+    "lat": 36.0745566863968,
+    "lon": 9.024588865081782
+  },
+  {
+    "code": "1178",
+    "storename": "Gafsa Ennour2 - Ave Palastine",
+    "ville": "Gafsa",
+    "delegation": "Gafsa Sud",
+    "address": "Avenue Palastine Cité Ennour",
+    "lat": 34.42795923006938,
+    "lon": 8.782816682208997
+  },
+  {
+    "code": "1179",
+    "storename": "Sousse Jawhara2 - Rue Raeid Bejaoui",
+    "ville": "Sousse",
+    "delegation": "Sousse Jawhara",
+    "address": "Rue Raeid Bejaoui Route Kalaa Sghira",
+    "lat": 35.82461393302934,
+    "lon": 10.625418999999997
+  },
+  {
+    "code": "1181",
+    "storename": "El Kef Barnoussa - Ave Taieb Mhiri",
+    "ville": "Le Kef",
+    "delegation": "Le Kef Ouest",
+    "address": "Avenue Taieb Mhiri Barnoussa",
+    "lat": 36.156483414097075,
+    "lon": 8.696348233135222
+  },
+  {
+    "code": "1182",
+    "storename": "Siliana1 - Ave 2 Mars Cité Hached",
+    "ville": "Siliana",
+    "delegation": "Siliana Nord",
+    "address": "Avenue 2 Mars Cité Hached",
+    "lat": 36.08475913761907,
+    "lon": 9.368014542327883
+  },
+  {
+    "code": "1185",
+    "storename": "Mnihla Rte Chinois - Ave Chinois",
+    "ville": "Ariana",
+    "delegation": "El Mnihla",
+    "address": "Fait le coin entre Avenue Chinoi et Rue Menzel Chaker Cité el Bassatine",
+    "lat": 36.84706309945934,
+    "lon": 10.094941898147578
+  },
+  {
+    "code": "1186",
+    "storename": "Djerba Midoun - Rue Amilcar",
+    "ville": "Medenine",
+    "delegation": "Djerba Midoun",
+    "address": "Angle Rue Amilcar et Rue Salah Ben Youssef",
+    "lat": 33.808951119375564,
+    "lon": 10.989603447406953
+  },
+  {
+    "code": "1188",
+    "storename": "Bs Sfax Rte Gremda - Rte Gremda Km7",
+    "ville": "Sfax",
+    "delegation": "Sfax Sud",
+    "address": "Rez de chaussé immeuble les parfums Rte Gremda km7",
+    "lat": 34.79275286451495,
+    "lon": 10.716077388885479
+  },
+  {
+    "code": "1189",
+    "storename": "Ezzahra Bs - Ave De Lenvironnement",
+    "ville": "Ezzahra",
+    "delegation": "Ezzahra",
+    "address": "Avenue de l'environnement Cité Abou El Houl",
+    "lat": 36.734617,
+    "lon": 10.318614
+  },
+  {
+    "code": "1191",
+    "storename": "El Omrane Superieur - Rue 6259",
+    "ville": "Tunis",
+    "delegation": "El Omrane Supérieur",
+    "address": "N° 23 Rue 6259",
+    "lat": 36.83958695541251,
+    "lon": 10.124486034393309
+  },
+  {
+    "code": "1193",
+    "storename": "Haouaria - Ave Habib Bourguiba",
+    "ville": "Nabeul",
+    "delegation": "El Haouaria",
+    "address": "Avenue Habib Bourguiba",
+    "lat": 37.04848238541574,
+    "lon": 11.012351110450753
+  },
+  {
+    "code": "1194",
+    "storename": "Bousalem 2 - Rue Salah Ben Youssef",
+    "ville": "Bou Salem",
+    "delegation": "Bou Salem",
+    "address": "Rue Salah Ben Youssef",
+    "lat": 36.60988017274124,
+    "lon": 8.972088682209
+  },
+  {
+    "code": "1195",
+    "storename": "Bizerte Corniche - Route Korniche",
+    "ville": "Bizerte",
+    "delegation": "Bizerte Nord",
+    "address": "142 route Korniche",
+    "lat": 37.29752823622628,
+    "lon": 9.867157233135204
+  },
+  {
+    "code": "1196",
+    "storename": "Hajeb El Ayoun - Rue Ibn Khaldoun",
+    "ville": "kairouan",
+    "delegation": "Hajeb El Ayoun",
+    "address": "Rue Ibn Khaldoun",
+    "lat": 35.395172,
+    "lon": 9.544953
+  },
+  {
+    "code": "1197",
+    "storename": "Douar Hicher3 - 4 Route De Mateur KM7",
+    "ville": "Manouba",
+    "delegation": "Douar Hicher",
+    "address": "4 route de Mateur KM7",
+    "lat": 36.82309059000354,
+    "lon": 10.073450906745904
+  },
+  {
+    "code": "1198",
+    "storename": "Bizerte Ain Mariem - Route Ain Mariem",
+    "ville": "Bizerte",
+    "delegation": "Bizerte Nord",
+    "address": "Route Ain Mariem",
+    "lat": 37.289169,
+    "lon": 9.866825
+  },
+  {
+    "code": "1200",
+    "storename": "El Mourouj5 Ettakwa - Av 15 Juillet",
+    "ville": "El Mourouj 05",
+    "delegation": "El Mourouj",
+    "address": "Avenue 15 juillet",
+    "lat": 36.71340539938144,
+    "lon": 10.210981880950927
+  },
+  {
+    "code": "1201",
+    "storename": "Ksar Said - Ave El Maghreb El Arabi",
+    "ville": "Le bardo",
+    "delegation": "Le Bardo",
+    "address": "Avenue el Maghreb El Arabi et Angle Rue Hafeth Ibrahim",
+    "lat": 36.82687547555049,
+    "lon": 10.116039203704847
+  },
+  {
+    "code": "1202",
+    "storename": "Ariana Jadida - Rue Ahmed Khaireddine",
+    "ville": "Ariana",
+    "delegation": "Ariana Médina",
+    "address": "Rue Ahmed Khaireddine",
+    "lat": 36.85198997321818,
+    "lon": 10.18130090674591
+  },
+  {
+    "code": "1205",
+    "storename": "Sousse Route Khezama - Ave El Maghreb",
+    "ville": "Sousse",
+    "delegation": "Sousse Médina",
+    "address": "Avenue El Maghreb El Arabi Khezama",
+    "lat": 35.846558415153716,
+    "lon": 10.611357818454756
+  },
+  {
+    "code": "1211",
+    "storename": "Sfax Route Mharza - Rte Mharza Km3",
+    "ville": "Sfax ouest",
+    "delegation": "Sfax Ouest",
+    "address": "Immeuble El Ksar Rte Mharza km3",
+    "lat": 34.72509908767615,
+    "lon": 10.730638999999984
+  },
+  {
+    "code": "1212",
+    "storename": "Bellevue - Ave Bellevue",
+    "ville": "Tunis",
+    "delegation": "El Ouardia",
+    "address": "Avenue Bellevue",
+    "lat": 36.779428,
+    "lon": 10.192022
+  },
+  {
+    "code": "1213",
+    "storename": "Sousse Corniche - Ave Mongi Bali",
+    "ville": "Sousse",
+    "delegation": "Sousse Médina",
+    "address": "Avenue Mongi Bali",
+    "lat": 35.83747354645809,
+    "lon": 10.630562402446747
+  },
+  {
+    "code": "1215",
+    "storename": "Sousse Khezama Les Orangers - Ave Des Oranges",
+    "ville": "Sousse",
+    "delegation": "Sousse Médina",
+    "address": "Avenue des Oranges Khezema",
+    "lat": 35.85552743565753,
+    "lon": 10.610966229499814
+  },
+  {
+    "code": "1219",
+    "storename": "Avenue Madrid - Ave Madrid Bab El Khadra",
+    "ville": "Tunis",
+    "delegation": "Bab Souika",
+    "address": "Avenue Madrid Bab El Khadra",
+    "lat": 36.807992,
+    "lon": 10.177714
+  },
+  {
+    "code": "1221",
+    "storename": "Ezzouhour2 - Ave Wed Zembis",
+    "ville": "Tunis",
+    "delegation": "Ezzouhour",
+    "address": "Avenue wed zembis N° 24 et rue 400",
+    "lat": 36.7924632436315,
+    "lon": 10.124760898147587
+  },
+  {
+    "code": "1222",
+    "storename": "Borj Louzir2 - Rte Chotrana",
+    "ville": "Ariana",
+    "delegation": "Soukra",
+    "address": "22 Rte Chotrana 2073 Borj Louzir",
+    "lat": 36.87534665968367,
+    "lon": 10.203544101852428
+  },
+  {
+    "code": "1224",
+    "storename": "Fouchana 3 - Rte Chebeda",
+    "ville": "Fouchana",
+    "delegation": "Fouchana",
+    "address": "Rte Chebeda Lotissement Ennejeh",
+    "lat": 36.698192,
+    "lon": 10.171356
+  },
+  {
+    "code": "1225",
+    "storename": "Cite El Bahri - Rte El Matar Km 4",
+    "ville": "Sfax",
+    "delegation": "Sfax Ouest",
+    "address": "Rte El Matar KM 4 Cité El Bahri",
+    "lat": 34.728272811672,
+    "lon": 10.704236262565612
+  },
+  {
+    "code": "1227",
+    "storename": "Sidi Hassine Jayara - Lotis El Basatine",
+    "ville": "Tunis",
+    "delegation": "Sidi Hassine",
+    "address": "Lot N° 3 Lotissement El Basatine",
+    "lat": 36.772394,
+    "lon": 10.108986
+  },
+  {
+    "code": "1228",
+    "storename": "Beni Khalled2 - Ave Habib Bourguiba",
+    "ville": "Béni Khalled",
+    "delegation": "Béni Khalled",
+    "address": "Avenue Habib Bourguiba",
+    "lat": 36.652667896454474,
+    "lon": 10.589979084655775
+  },
+  {
+    "code": "1229",
+    "storename": "Mahdia3 - Ave 2 Mars 1934",
+    "ville": "Mahdia",
+    "delegation": "Mahdia",
+    "address": "Avenue 2 Mars 1934",
+    "lat": 35.50776568972033,
+    "lon": 11.051753277280806
+  },
+  {
+    "code": "1230",
+    "storename": "Monastir 3 - Cité El Omrane",
+    "ville": "Monastir",
+    "delegation": "Monastir",
+    "address": "Avenue de l'Environnement Cité El Omrane",
+    "lat": 35.76598429124032,
+    "lon": 10.811208373016363
+  },
+  {
+    "code": "1231",
+    "storename": "El Omrane Superieur2 - Rue Al Wala El Watan",
+    "ville": "Tunis",
+    "delegation": "El Omrane Supérieur",
+    "address": "Rue 6851 (Rue Al Wala El Watan)",
+    "lat": 36.831392,
+    "lon": 10.12355
+  },
+  {
+    "code": "1232",
+    "storename": "Kairouan Rte Oueslatia - Route Oueslatia",
+    "ville": "Kairouan",
+    "delegation": "Kairouan Sud",
+    "address": "Lotissement Sahbi l Wahed Route Oueslatia",
+    "lat": 35.68165300000012,
+    "lon": 10.082215763229385
+  },
+  {
+    "code": "1236",
+    "storename": "Chebbaou2 - Ave De L indépendance",
+    "ville": "Oued Ellil",
+    "delegation": "Oued Ellil",
+    "address": "Avenue de l'indépendance Chabaw",
+    "lat": 36.8469469,
+    "lon": 10.0311167
+  },
+  {
+    "code": "1238",
+    "storename": "Monastir Sayada - Ave Habib Bourghiba",
+    "ville": "Sayada",
+    "delegation": "Sayada-Lamta-Bou Hjar",
+    "address": "Croisement Avenue Habib Bourghiba et 18 Janvier 1952",
+    "lat": 35.66640320825758,
+    "lon": 10.891715084655775
+  },
+  {
+    "code": "1240",
+    "storename": "Sfax Route Mahdia - Ave Habib Bourguiba",
+    "ville": "Sfax",
+    "delegation": "Sakiet Eddaïer",
+    "address": "Avenue Habib Bourguiba Rte El Mahdia KM 5",
+    "lat": 34.785208,
+    "lon": 10.778233
+  },
+  {
+    "code": "1241",
+    "storename": "Khnis - Ave Habib Bourguiba",
+    "ville": "Khenis",
+    "delegation": "Monastir",
+    "address": "Avenue Habib Bourguiba",
+    "lat": 35.71235735568039,
+    "lon": 10.816331101852409
+  },
+  {
+    "code": "1242",
+    "storename": "Sidi Thabet - Ave Habib Bourguiba",
+    "ville": "Sidi Thabet",
+    "delegation": "Sidi Thabet",
+    "address": "Avenue Habib Bourguiba",
+    "lat": 36.9095024,
+    "lon": 10.0438968
+  },
+  {
+    "code": "1243",
+    "storename": "Moknine 3 - Ave De La République",
+    "ville": "Moknine",
+    "delegation": "Moknine",
+    "address": "Avenue de la République",
+    "lat": 35.6319648379583,
+    "lon": 10.897878860118846
+  },
+  {
+    "code": "1245",
+    "storename": "Ksour Essef2 - Ave Habib Bourguiba",
+    "ville": "Ksour Essef",
+    "delegation": "Ksour Essef",
+    "address": "Avenue Habib Bourguiba",
+    "lat": 35.41746748695658,
+    "lon": 10.992686813491828
+  },
+  {
+    "code": "1246",
+    "storename": "Tataouine - Ave Ahmed Tlili",
+    "ville": "Tataouine Nord",
+    "delegation": "Tataouine Nord",
+    "address": "Avenue Ahmed Tlili",
+    "lat": 32.92873147651735,
+    "lon": 10.446035288360601
+  },
+  {
+    "code": "1247",
+    "storename": "Borj Louzir Erraoudha - Rue 4581",
+    "ville": "Soukra",
+    "delegation": "Soukra",
+    "address": "Rue 4581 Mosquée Erraoudha",
+    "lat": 36.873792,
+    "lon": 10.219292
+  },
+  {
+    "code": "1249",
+    "storename": "Kelibia 03 - Ave Tunis",
+    "ville": "Kélibia",
+    "delegation": "Kélibia",
+    "address": "Avenue Tunis",
+    "lat": 36.844417,
+    "lon": 11.081256
+  },
+  {
+    "code": "1250",
+    "storename": "Mahres - Rue Hadi Chaker",
+    "ville": "Mahres",
+    "delegation": "Mahres",
+    "address": "Croisement de Rue Hadi Chaker et de l'Avenue des Aghlabides",
+    "lat": 34.52524658864884,
+    "lon": 10.496999288360595
+  },
+  {
+    "code": "1253",
+    "storename": "Meknassy01 - Ave Habib Bourguiba",
+    "ville": "Meknassy",
+    "delegation": "Meknassi",
+    "address": "Avenue Habib Bourguiba",
+    "lat": 34.605688869055385,
+    "lon": 9.605598903687458
+  },
+  {
+    "code": "1266",
+    "storename": "Monastir05 - Sidi Seri",
+    "ville": "Monastir",
+    "delegation": "Monastir",
+    "address": "Sidi Seri",
+    "lat": 35.777133,
+    "lon": 10.826761
+  }
+]

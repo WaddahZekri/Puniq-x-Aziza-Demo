@@ -1,0 +1,93 @@
+.zone-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  background: var(--puniq-navy-2);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  transition: border-color 0.3s;
+}
+
+.zone-card--warning {
+  border-color: var(--status-danger);
+}
+
+.zone-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.zone-card__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--ice);
+}
+
+.zone-card__status {
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--status-good);
+}
+
+.zone-card__status--warning {
+  color: var(--status-danger);
+}
+
+.zone-card__readings {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.zone-card__reading {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.zone-card__reading-label {
+  color: var(--text-muted);
+}
+
+.zone-card__reading-value {
+  color: var(--ice);
+  font-variant-numeric: tabular-nums;
+}
+
+.zone-card__reading-value--warning {
+  color: var(--status-danger);
+  font-weight: 600;
+}
+
+.zone-card__footer {
+  padding-top: 4px;
+}
+
+.zone-card__fault-btn {
+  width: 100%;
+  padding: 7px 10px;
+  font-size: 0.75rem;
+  font-family: var(--font-body);
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.zone-card__fault-btn:hover {
+  color: var(--status-danger);
+  border-color: var(--status-danger);
+}
+
+.zone-card__empty {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}

@@ -1,0 +1,143 @@
+.network-overlay-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(5, 11, 26, 0.72);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.network-overlay-backdrop.is-visible {
+  opacity: 1;
+}
+
+.network-overlay {
+  width: 85vw;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  background: var(--puniq-navy);
+  border: 1px solid var(--card-border);
+  border-radius: 14px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+  transform: scale(0.96);
+  transition: transform 0.2s ease;
+}
+
+.network-overlay-backdrop.is-visible .network-overlay {
+  transform: scale(1);
+}
+
+.network-overlay__header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 20px 24px;
+  border-bottom: 1px solid var(--card-border);
+  flex-shrink: 0;
+}
+
+.network-overlay__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-right: auto;
+}
+
+.network-overlay__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1.4rem;
+  color: var(--ice);
+}
+
+.network-overlay__subtitle {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.network-overlay__status-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.network-overlay__trust-btn {
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--card-border);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: border-color 0.2s, opacity 0.2s;
+}
+
+.network-overlay__trust-btn:hover {
+  opacity: 0.85;
+  border-color: var(--puniq-blue-light);
+}
+
+.network-overlay__close {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  line-height: 1;
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid var(--card-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.network-overlay__close:hover {
+  color: var(--ice);
+  border-color: var(--puniq-blue-light);
+}
+
+.network-overlay__tabs {
+  display: flex;
+  gap: 4px;
+  padding: 0 24px;
+  border-bottom: 1px solid var(--card-border);
+  flex-shrink: 0;
+  overflow-x: auto;
+}
+
+.network-overlay__tab {
+  position: relative;
+  padding: 14px 16px;
+  font-size: 0.9rem;
+  font-family: var(--font-body);
+  color: var(--text-muted);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.network-overlay__tab.is-active {
+  color: var(--ice);
+  border-bottom-color: var(--puniq-blue-light);
+}
+
+.network-overlay__content {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+}

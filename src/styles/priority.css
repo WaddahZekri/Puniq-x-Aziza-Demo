@@ -1,0 +1,35 @@
+/* Shared priority color language for insight/alert/ticket cards — a single
+   place to change what "Urgent" looks like everywhere it appears, instead
+   of three separately hand-maintained copies. */
+
+.priority-border--urgent {
+  border-left-color: var(--status-danger);
+}
+
+.priority-border--recommended {
+  border-left-color: var(--status-warn);
+}
+
+.priority-border--informational {
+  border-left-color: var(--puniq-blue-light);
+}
+
+.priority-badge {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--ice);
+}
+
+.priority-badge--urgent {
+  color: var(--status-danger);
+}
+
+.priority-badge--recommended {
+  color: var(--status-warn);
+}
+
+.priority-badge--informational {
+  color: var(--puniq-blue-light);
+}

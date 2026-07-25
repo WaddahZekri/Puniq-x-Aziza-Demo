@@ -1,0 +1,125 @@
+.department-card {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 16px;
+  background: var(--puniq-navy-2);
+  border: 1px solid var(--card-border);
+  border-radius: 10px;
+  min-width: 0;
+}
+
+.department-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.department-card__title {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--ice);
+}
+
+.department-card__benchmark {
+  flex-shrink: 0;
+  font-size: 0.7rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.department-card__benchmark--good {
+  color: var(--status-good);
+}
+
+.department-card__benchmark--warn {
+  color: var(--status-warn);
+}
+
+.department-card__units {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.department-card__unit-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.82rem;
+}
+
+.department-card__unit-name {
+  flex: 1;
+  min-width: 0;
+  color: var(--text-muted);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.department-card__unit-temp {
+  flex-shrink: 0;
+  color: var(--ice);
+  font-variant-numeric: tabular-nums;
+}
+
+.department-card__unit-temp--warning {
+  color: var(--status-danger);
+  font-weight: 600;
+}
+
+.department-card__fault-btn {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid var(--card-border);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s;
+}
+
+.department-card__fault-btn:hover {
+  color: var(--status-danger);
+  border-color: var(--status-danger);
+}
+
+.department-card__fault-active {
+  flex-shrink: 0;
+  width: 26px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  color: var(--status-danger);
+}
+
+.department-card__row {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  padding-top: 4px;
+  border-top: 1px solid var(--card-border);
+  font-size: 0.78rem;
+}
+
+.department-card__row-label {
+  flex-shrink: 0;
+  color: var(--text-muted);
+}
+
+.department-card__row-value {
+  text-align: right;
+  color: var(--ice);
+  font-variant-numeric: tabular-nums;
+}

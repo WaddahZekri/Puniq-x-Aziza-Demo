@@ -1,0 +1,30 @@
+.metric-sparkline {
+  display: block;
+  margin-top: 4px;
+  overflow: visible;
+}
+
+.metric-sparkline__line {
+  stroke: var(--text-muted);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.metric-sparkline__dot {
+  fill: var(--puniq-amber-muted);
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: metric-sparkline-pop 0.4s ease-out;
+}
+
+@keyframes metric-sparkline-pop {
+  from {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}

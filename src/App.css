@@ -1,0 +1,13 @@
+.app-shell {
+  min-height: 100vh;
+  background: var(--puniq-navy);
+}
+
+.app-canvas {
+  position: fixed;
+  top: 64px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}

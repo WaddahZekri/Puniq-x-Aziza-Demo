@@ -1,0 +1,40 @@
+.locked-tab-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 48px 24px;
+  text-align: center;
+}
+
+.locked-tab-state__icon {
+  font-size: 2rem;
+  opacity: 0.45;
+  filter: grayscale(1);
+}
+
+.locked-tab-state__message {
+  margin: 0;
+  max-width: 380px;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--text-muted);
+}
+
+.locked-tab-state__connect-btn {
+  padding: 12px 20px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: var(--font-body);
+  color: var(--ice);
+  background: var(--monoprix-red);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.locked-tab-state__connect-btn:hover {
+  opacity: 0.9;
+}
