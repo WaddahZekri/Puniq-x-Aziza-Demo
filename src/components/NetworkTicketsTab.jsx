@@ -58,14 +58,12 @@ function NetworkTicketsTab() {
     setPriorityFilter((prev) => (prev === priority ? null : priority));
   };
 
-  // Fault-originated tickets don't live on the Intelligence tab (they're
-  // shown on the store overview's alert card instead) — no focusInsightId
-  // to jump to, so route those to Overview rather than Intelligence.
+  // Every ticket — fault or insight — is shown on the Intelligence tab
+  // (StoreOverlayIntelligenceTab renders both) and can be jumped to and
+  // highlighted by its id, so every ticket routes through the exact same
+  // path regardless of kind. Keeps this in parity with the notification
+  // bell, which opens tickets the same way.
   const handleViewDetail = (ticket) => {
-    if (ticket.kind === 'fault') {
-      openStoreFromNetworkOverlay(ticket.store.code, { tab: 'overview' });
-      return;
-    }
     handleViewStore(ticket.store.code, ticket.id);
   };
 

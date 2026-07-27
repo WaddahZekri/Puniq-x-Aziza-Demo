@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
 import { useNetwork } from '../context/NetworkContext';
-import { useFault } from '../context/FaultContext';
+import { useNetworkTickets } from '../hooks/useNetworkTickets';
 import { useTicketResolvers } from '../hooks/useTicketResolvers';
+import { getPriorityClass } from '../utils/priority';
 import { getStoreLabel } from '../utils/format';
 import FaultAlertCard from './FaultAlertCard';
 import './NotificationBell.css';
@@ -20,27 +21,22 @@ function BellIcon() {
   );
 }
 
-// Live-incident counterpart to the Dashboard's "Simuler une panne" buttons
-// and the Auto-mode fault engine — reads FaultContext directly (not the
-// merged Insights+Faults severity map that colors map markers/sidebar
-// dots/the ticket panel, see useStoreSeverityMap), so this badge/list is
-// scoped to actively-drifting live faults specifically, same as the store
-// overview's hero alert card. Additive next to the existing Intelligence
-// Réseau button — doesn't touch it.
+// Reads the exact same merged Insights+Faults ticket list every other
+// network-wide surface does (see useNetworkTickets) — filtered to Urgent
+// priority only, so this badge/list can never disagree with the number of
+// red markers on the map or the "Urgents" count in Intelligence Réseau →
+// Tickets prioritaires (see useStoreSeverityMap, itself built from this
+// same list). Clicking a ticket navigates through the exact same
+// openStoreFromNetworkOverlay(..., { tab: 'intelligence', focusInsightId })
+// path the Tickets Prioritaires panel uses, landing on the identical card.
 function NotificationBell() {
-  const { allStores, connectedCodes, setActiveStore } = useNetwork();
-  const { activeFaults } = useFault();
+  const { openStoreFromNetworkOverlay } = useNetwork();
+  const allTickets = useNetworkTickets();
   const { resolveFaultTicket } = useTicketResolvers();
   const [isOpen, setIsOpen] = useState(false);
   const containerRef = useRef(null);
 
-  const urgentTickets = connectedCodes.flatMap((code) => {
-    const store = allStores.find((candidate) => candidate.code === code);
-    if (!store) return [];
-    return (activeFaults[code] || [])
-      .filter((fault) => fault.severity === 'urgent')
-      .map((fault) => ({ store, fault }));
-  });
+  const urgentTickets = allTickets.filter((ticket) => ticket.priority === 'Urgent');
 
   useEffect(() => {
     if (!isOpen) return undefined;
@@ -62,8 +58,8 @@ function NotificationBell() {
     };
   }, [isOpen]);
 
-  const handleSelect = (code) => {
-    setActiveStore(code, { tab: 'overview' });
+  const handleSelect = (ticket) => {
+    openStoreFromNetworkOverlay(ticket.store.code, { tab: 'intelligence', focusInsightId: ticket.id });
     setIsOpen(false);
   };
 
@@ -87,28 +83,43 @@ function NotificationBell() {
             <p className="notification-bell__empty">Aucun ticket urgent actif sur le réseau.</p>
           ) : (
             <div className="notification-bell__list">
-              {urgentTickets.map(({ store, fault }) => (
+              {urgentTickets.map((ticket) => (
                 <div
-                  key={fault.id}
+                  key={ticket.id}
                   className="notification-bell__item"
                   role="button"
                   tabIndex={0}
-                  onClick={() => handleSelect(store.code)}
+                  onClick={() => handleSelect(ticket)}
                   onKeyDown={(event) => {
                     if (event.key === 'Enter' || event.key === ' ') {
                       event.preventDefault();
-                      handleSelect(store.code);
+                      handleSelect(ticket);
                     }
                   }}
                 >
-                  <FaultAlertCard
-                    fault={fault}
-                    storeLabel={getStoreLabel(store)}
-                    onResolve={(event) => {
-                      event.stopPropagation();
-                      resolveFaultTicket(store, fault);
-                    }}
-                  />
+                  {ticket.kind === 'fault' ? (
+                    <FaultAlertCard
+                      fault={ticket.fault}
+                      storeLabel={getStoreLabel(ticket.store)}
+                      onResolve={(event) => {
+                        event.stopPropagation();
+                        resolveFaultTicket(ticket.store, ticket.fault);
+                      }}
+                    />
+                  ) : (
+                    <div
+                      className={`notification-bell__ticket priority-border--${getPriorityClass(ticket.priority)}`}
+                    >
+                      <div className="notification-bell__ticket-header">
+                        <span className={`priority-badge priority-badge--${getPriorityClass(ticket.priority)}`}>
+                          {ticket.priority}
+                        </span>
+                        <span className="notification-bell__ticket-store">{getStoreLabel(ticket.store)}</span>
+                      </div>
+                      <p className="notification-bell__ticket-title">{ticket.title}</p>
+                      <p className="notification-bell__ticket-impact">{ticket.estimatedImpact}</p>
+                    </div>
+                  )}
                 </div>
               ))}
             </div>

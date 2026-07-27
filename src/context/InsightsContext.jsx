@@ -63,6 +63,28 @@ export function InsightsProvider({ children }) {
     });
   }, []);
 
+  // Marks a batch of this store's insight tickets as 'queued' — real,
+  // deterministic findings that exist but aren't surfaced as open tickets
+  // (not 'open', so they're excluded everywhere an 'open' filter is
+  // applied: severity map, network ticket panel, notification bell, the
+  // store's own Intelligence tab). Used by MapSimulationOverlay's
+  // connect-time flagged-store cap to keep the network's flagged
+  // proportion realistic instead of every connected store showing amber/
+  // red from day one. Only touches ids with no existing runtime entry, so
+  // it can never silently override a ticket already actioned.
+  const queueInsights = useCallback((store, insightIds) => {
+    setRuntimeByStore((prev) => {
+      const storeRuntime = prev[store.code] ?? {};
+      const nextRuntime = { ...storeRuntime };
+      insightIds.forEach((id) => {
+        if (!nextRuntime[id]) {
+          nextRuntime[id] = { status: 'queued' };
+        }
+      });
+      return { ...prev, [store.code]: nextRuntime };
+    });
+  }, []);
+
   // Aggregated effect of every ticket this store has had actioned this
   // session — MEASURED (fully applied and confirmed) controllable cards
   // layer their setpoint/lighting adjustment on top of the store's base
@@ -130,7 +152,7 @@ export function InsightsProvider({ children }) {
     [runtimeByStore],
   );
 
-  const value = { getInsightsForStore, applyInsight, dismissInsight, getStoreImpact };
+  const value = { getInsightsForStore, applyInsight, dismissInsight, queueInsights, getStoreImpact };
 
   return <InsightsContext.Provider value={value}>{children}</InsightsContext.Provider>;
 }

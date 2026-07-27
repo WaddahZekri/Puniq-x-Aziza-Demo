@@ -73,7 +73,13 @@ function StoreOverlayIntelligenceTab({ store, isConnected, onConnect, focusInsig
     );
   }
 
-  const insights = getInsightsForStore(store, discoveredDeviceIds);
+  // 'queued' tickets are real findings held back by the network-wide
+  // flagged-store cap (see MapSimulationOverlay) — excluded here too so
+  // this store's own detail view never contradicts what the map/bell/
+  // Tickets Prioritaires panel show for it.
+  const insights = getInsightsForStore(store, discoveredDeviceIds).filter(
+    (insight) => insight.status !== 'queued',
+  );
 
   return (
     <div className="intelligence-tab">
@@ -81,11 +87,23 @@ function StoreOverlayIntelligenceTab({ store, isConnected, onConnect, focusInsig
 
       <div className="intelligence-tab__insights">
         {refrigerationFaults.map((fault) => (
-          <FaultAlertCard key={fault.id} fault={fault} onResolve={() => resolveFaultTicket(store, fault)} />
+          <div
+            key={fault.id}
+            ref={`fault-${fault.id}` === focusInsightId ? focusedRef : null}
+            className={`fault-${fault.id}` === focusInsightId ? 'intelligence-tab__insight--focused' : ''}
+          >
+            <FaultAlertCard fault={fault} onResolve={() => resolveFaultTicket(store, fault)} />
+          </div>
         ))}
 
         {compressorFaults.map((fault) => (
-          <FaultAlertCard key={fault.id} fault={fault} onResolve={() => resolveFaultTicket(store, fault)} />
+          <div
+            key={fault.id}
+            ref={`fault-${fault.id}` === focusInsightId ? focusedRef : null}
+            className={`fault-${fault.id}` === focusInsightId ? 'intelligence-tab__insight--focused' : ''}
+          >
+            <FaultAlertCard fault={fault} onResolve={() => resolveFaultTicket(store, fault)} />
+          </div>
         ))}
 
         {insights.map((insight) => (

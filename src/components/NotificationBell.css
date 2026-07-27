@@ -94,3 +94,44 @@
 .notification-bell__item:hover {
   transform: translateY(-1px);
 }
+
+/* Insight-originated urgent tickets (as opposed to live faults, which use
+   FaultAlertCard directly) — same border/badge language as
+   NetworkTicketsTab's rows (see priority.css), scaled down for the
+   dropdown. */
+.notification-bell__ticket {
+  padding: 12px 14px;
+  background: var(--puniq-navy);
+  border-top: 1px solid var(--card-border);
+  border-right: 1px solid var(--card-border);
+  border-bottom: 1px solid var(--card-border);
+  border-left-width: 3px;
+  border-left-style: solid;
+  border-radius: 10px;
+}
+
+.notification-bell__ticket-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 4px;
+}
+
+.notification-bell__ticket-store {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.notification-bell__ticket-title {
+  margin: 0 0 4px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.85rem;
+  color: var(--ice);
+}
+
+.notification-bell__ticket-impact {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--amber);
+}
